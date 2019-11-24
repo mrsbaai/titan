@@ -1,0 +1,783 @@
+.active {
+  visibility: visible;
+}
+.hidden {
+  visibility: hidden;
+}
+.hidden_d {
+  display: none;
+}
+.active_d {
+  display: block;
+}
+.reelsection {
+  padding-top: 10px;
+  background-color: #ffffff;
+  direction: ltr;
+}
+.reel {
+  background-image: url(https://dadbab.info/content/S52CT3iv9eb2FdI/img/reel/reel_bg.png);
+  background-size: cover;
+  margin-bottom: 10px;
+}
+.reelsection__head {
+  color: #000000;
+  font-size: 50px;
+  font-weight: 900;
+  font-style: italic;
+  text-align: center;
+}
+.reel__head {
+  color: #ffffff;
+  font-size: 80px;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+  text-shadow: 3px 5px 25px rgba(5, 5, 5, 0.56);
+  background-image: url(https://dadbab.info/content/S52CT3iv9eb2FdI/img/reel/head_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 95px 20px;
+  padding-left: 85px;
+  padding-right: 40px;
+  min-width: 70%;
+  display: inline-block;
+}
+.reel__disc {
+  display: inline-block;
+  background-image: url(https://dadbab.info/content/S52CT3iv9eb2FdI/img/reel/disc_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  text-shadow: 4px 7px 15px rgba(5, 5, 5, 0.44);
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: 900;
+  padding: 65px 0px;
+  min-width: 263px;
+  min-height: 263px;
+  margin-left: -41px;
+  position: relative;
+  top: 21px;
+}
+.reel__disc-val {
+  display: block;
+  font-size: 90px;
+}
+.reel__body {
+  background-image: url(https://dadbab.info/content/S52CT3iv9eb2FdI/img/reel/counter_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 70px;
+  margin-top: -162px;
+  margin-left: 20px;
+  padding-bottom: 204px;
+}
+.reel__body-head {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 20px;
+  text-shadow: 6px 10px 22.56px rgba(5, 5, 5, 0.7);
+  max-width: 70%;
+  text-align: center;
+}
+.reel__body-head-big {
+  color: #ffb400;
+  text-transform: uppercase;
+}
+.reel__counter {
+  display: table;
+  width: 100%;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+.reel__counter-item-box {
+  padding: 5px;
+  display: table-cell;
+}
+.reel__counter-item {
+  background-color: #ffffff;
+  height: 240px;
+  box-shadow: inset 0 0 20px 6px rgba(0, 0, 0, 0.54);
+  background-image: url(https://dadbab.info/content/S52CT3iv9eb2FdI/img/reel/casino_elements.png);
+  background-position-y: 21px;
+  background-position-x: center;
+}
+.reel__counter-item_one {
+
+}
+.reel__counter-item_two {
+
+}
+.reel__counter-item_three {
+
+}
+
+.reel__counter-btn-cont {
+  display: table-cell;
+  vertical-align: middle;
+  width: 30%;
+}
+.reel__body-btn-box {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url(https://dadbab.info/content/S52CT3iv9eb2FdI/img/reel/button_bg.png);
+  background-size: 107%;
+  background-position: -6px -4px;
+  padding: 20px;
+  padding-left: 21px;
+  margin-left: 20px;
+}
+.reel__body-btn-box_anim {
+  animation: pulse 2s linear infinite;
+  box-shadow: 0 0 17px 13px rgba(255, 255, 255, 0.85);
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 17px 13px rgba(255, 255, 255, 0.85);
+  }
+  50% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 0 0 17px 13px rgba(255, 255, 255, 0.85);
+  }
+}
+.reel__body-btn {
+  background-color: #ff1e00;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 3px solid #ff1e00;
+  box-shadow: inset 0 0 19px 6px rgba(0, 0, 0, 0.21);
+}
+.reel__body-btn:hover {
+  cursor: pointer;
+}
+.reel__body-btn:active {
+  box-shadow: inset 0 0 45px 10px rgba(0, 0, 0, 0.31);
+}
+.reel__body-btn_dis {
+  border: 3px solid #717172;
+  background-color: #c0c2c3;
+}
+.reel__body-btn_dis:hover {
+  cursor: not-allowed;
+}
+.reel__body-btn_dis:active {
+  box-shadow: inset 0 0 19px 6px rgba(0, 0, 0, 0.21);
+}
+.reel__footer {
+  position: relative;
+}
+.reel__body-text-wrap {
+  display: inline-block;
+  max-width: 70%;
+  font-weight: 700;
+  font-style: italic;
+  text-shadow: 4px 8px 13px rgba(5, 5, 5, 0.33);
+  text-align: center;
+}
+.reel__body-text {
+  color: #ffffff;
+  font-size: 35px;
+}
+.reel__body-untext {
+  color: #ffb400;
+  font-size: 57px;
+}
+.reel__attempts {
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  max-width: 29%;
+  background-image: url(https://dadbab.info/content/S52CT3iv9eb2FdI/img/reel/attempts_bg.png);
+  color: #ffffff;
+  font-size: 31px;
+  font-weight: 700;
+  font-style: italic;
+  text-shadow: 4px 3px 8px rgba(5, 5, 5, 0.61);
+  background-position: center top;
+  background-size: cover;
+  padding: 20px 10px;
+  padding-top: 90px;
+  bottom: -172px;
+  right: 18px;
+}
+.reel__attempts-head {
+  margin-bottom: 15px;
+}
+.reel__attempts-count {
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
+  display: block;
+  width: 75px;
+  height: 75px;
+  margin: auto;
+  margin-bottom: 15px;
+  color: #000000;
+  font-size: 50px;
+  font-style: normal;
+  line-height: 1.4;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.58);
+  box-shadow: inset 0 0 10px 0px rgba(0, 0, 0, 0.58);
+}
+.reel__attempts-text {
+  margin-bottom: 20px;
+}
+.reel__timer {
+  display: table;
+  font-family: 'Roboto Condensed';
+  width: 100%;
+  background-image: url(https://dadbab.info/content/S52CT3iv9eb2FdI/img/reel/timer_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 80px;
+  padding-bottom: 172px;
+  margin-top: -79px;
+  position: relative;
+  z-index: 1;
+}
+.reel__timer-res {
+  display: table-cell;
+  width: 60%;
+  vertical-align: top;
+  color: #ffffff;
+  font-size: 58px;
+  font-weight: 900;
+  font-style: italic;
+  text-shadow: 4px 8px 7px rgba(5, 5, 5, 0.36);
+}
+.reel__timer-res-val-box {
+  text-transform: uppercase;
+  font-size: 74px;
+}
+.reel__timer-count-head {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 900;
+  text-align: center;
+  line-height: 1.25;
+}
+.reel__timer-count {
+  display: table-cell;
+  vertical-align: top;
+  padding-top: 10px;
+}
+.reel__timer-res-text {
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 900;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+.counter {
+  display: table;
+  margin: 10px auto;
+  color: #ffb400;
+  font-size: 60px;
+  font-weight: 700;
+}
+.counter__item {
+  display: table-cell;
+}
+.counter__item-val {
+  display: inline-block;
+  position: relative;
+}
+.counter__item-val_colon {
+  padding-left: 25px;
+}
+.counter__item-val_colon:before {
+  content: ':';
+  position: absolute;
+  left: 4px;
+  top: -5px;
+}
+.congratulation {
+  background-image: url(https://dadbab.info/content/S52CT3iv9eb2FdI/img/reel/reel_bg_bottom.png);
+  background-size: cover;
+  margin-top: -63px;
+}
+.congratulation__body {
+  background-image: url(https://dadbab.info/content/S52CT3iv9eb2FdI/img/reel/congr_bg.png);
+  background-size: 80%;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  padding-top: 15px;
+  text-align: center;
+  max-width: 85%;
+  margin: auto;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 10;
+}
+.congratulation__body-wrap {
+  position: relative;
+}
+.congratulation__body-wrap:before {
+  content: '';
+  display: block;
+  position: absolute;
+  background-image: url(https://dadbab.info/content/S52CT3iv9eb2FdI/img/reel/fun_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -2px -76px;
+  height: 100%;
+  width: 210px;
+  left: 2px;
+  top: 0;
+  z-index: 0;
+}
+.congratulation__body-wrap:after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-image: url(https://dadbab.info/content/S52CT3iv9eb2FdI/img/reel/fun_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -562px -55px;
+  height: 100%;
+  width: 200px;
+  right: 44px;
+  top: 0;
+  z-index: 0;
+}
+.congratulation__body-head {
+  font-family: 'Open Sans';
+  color: #ffffff;
+  font-size: 55px;
+  font-weight: 700;
+  font-style: italic;
+  text-shadow: 5px 9px 25px rgba(5, 5, 5, 0.44);
+  background-image: url(https://dadbab.info/content/S52CT3iv9eb2FdI/img/reel/congr_head_bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 43px 20px;
+  padding-bottom: 55px;
+  margin-left: 38px;
+  max-width: 85%;
+  position: relative;
+  z-index: 20;
+}
+.congratulation__body-text {
+  font-family: 'Open Sans';
+  color: rgba(255, 255, 255, 0);;
+  font-size: 60px;
+  font-weight: 700;
+  text-shadow: 1px 3px 7px rgba(5, 5, 5, 0.69);
+  padding: 10px 110px;
+  line-height: 1.4;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 20;
+  background: linear-gradient(to left, green, red, yellow, blue, indigo, violet, green);
+  background-position: 0 0;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  animation: background 2s infinite alternate;
+}
+@keyframes background {
+  100% {
+    background-position: 500px 0;
+  }
+  50% {
+    background-position:  0px 0;
+  }
+  0% {
+    background-position:  -200px 0;
+  }
+}
+.congratulation__body-btn {
+  border: none;
+  font-family: 'Open Sans';
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.25;
+  font-style: italic;
+  text-shadow: 1px 3px 7px rgba(5, 5, 5, 0.69);
+  max-width: 62%;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px 6px rgba(5, 5, 5, 0.48);
+  background: linear-gradient(135deg, #ce63a3 0%, #df8e45 50%, #2295b5 100%);
+  padding: 10px 20px;
+  margin-left: -46px;
+  transition: 0.5s;
+  top: -18px;
+  position: relative;
+}
+.congratulation__body-btn:hover {
+  transform: scale(1.05);
+}
+.congratulation__timer {
+  text-align: center;
+  background-image: url(https://dadbab.info/content/S52CT3iv9eb2FdI/img/reel/congr_timer_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 75%;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+.congratulation__timer-head {
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: 900;
+  text-shadow: 2px 3px 12px rgba(5, 5, 5, 0.21);
+  text-transform: uppercase;
+  padding-top: 20px;
+  max-width: 50%;
+  margin: auto;
+  line-height: 1.25;
+}
+.counter_big {
+  font-size: 70px;
+}
+.congratulation__firework {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(52, 52, 52, 0.68);
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+.circle {
+  position: absolute;
+
+  top: 0px;
+  width: 25px;
+  height: 25px;
+  transition: left 0.5s ease, top 1s ease;
+  border-radius: 50%;
+}
+@keyframes bang_bang {
+  from {transform: scale(1);}
+  50% {transform: scale(1.5);}
+  to {transform: scale(1);}
+}
+@media screen and (max-width: 1080px) {
+  .container_reel {
+    width: 100%;
+    padding: 0;
+  }
+  .reelsection__head {
+    padding-bottom: 30px;
+  }
+  .reel__head {
+    background-image: none;
+    background: linear-gradient(45deg, #f46200 0%, #ec0208 100%);
+    width: 70%;
+    padding: 30px 30px;
+    display: table-cell;
+    font-size: 65px;
+    vertical-align: middle;
+  }
+  .reel__disc {
+    display: table-cell;
+    min-width: 200px;
+    min-height: 200px;
+    padding: 48px 0px;
+    font-size: 30px;
+    vertical-align: middle;
+    position: absolute;
+    right: 25px;
+    top: 51px;
+  }
+  .reel__head-wrap {
+    display: table;
+    width: 100%;
+    background: linear-gradient(45deg, #f46200 0%, #ec0208 100%);
+  }
+  .reel__body {
+    margin: 0;
+    background-image: none;
+    background: linear-gradient(45deg, #393939 0%, #1a1a1a 100%);
+    padding: 20px;
+    padding-top: 36px;
+  }
+  .reel__body-head {
+    margin: 20px;
+    max-width: 100%;
+    line-height: 1.25;
+  }
+  .reel__disc-val {
+    font-size: 70px;
+  }
+  .reel__counter {
+    display: block;
+    max-width: 550px;
+    margin: auto;
+  }
+  .reel__counter-item-box {
+    display: inline-block;
+    min-width: 180px;
+  }
+  .reel__counter-btn-cont {
+    display: block;
+  }
+  .reel__body-btn-box {
+    margin: 20px;
+
+  }
+  .reel__body-text-wrap {
+    display: none;
+  }
+  .reel__footer {
+    max-width: 550px;
+    margin: auto;
+  }
+  .reel__attempts {
+    transform: rotate(-90deg);
+    bottom: -57px;
+    left: 280px;
+    width: 209px;
+    height: 304px;
+    padding-top: 73px;
+  
+  }
+  .reel__attempts-head {
+    margin-bottom: 15px;
+    transform: rotate(90deg);
+    position: absolute;
+    left: 12px;
+    top: 76px;
+  }
+  .reel__attempts-count {
+    transform: rotate(90deg);
+    position: absolute;
+    left: 43px;
+    top: 195px;
+  }
+  .reel__attempts-text {
+    display: none;
+  }
+  .reel__timer {
+    margin: 0;
+    background-image: none;
+    background: linear-gradient(45deg, #393939 0%, #1a1a1a 100%);
+    padding: 20px;
+    display: block;
+  }
+  .reel__timer-res {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  .reel__timer-res-text {
+    font-size: 39px;
+  }
+  .reel__timer-res-val-box {
+    font-size: 53px;
+  }
+  .reel__timer-count {
+    display: block;
+  }
+  .congratulation__body-wrap:after,
+  .congratulation__body-wrap:before {
+    display: none;
+  }
+  .congratulation__body {
+    background-image: none;
+    background-color: #feb500;
+    max-width: 100%;
+    margin: 0;
+  }
+  .congratulation__body-head {
+    background-image: none;
+    background: linear-gradient(45deg, #f66d00 0%,#eb010d 100%);
+    margin: auto;
+    font-size: 50px;
+    box-shadow: 7px 8px 7px 4px rgba(0, 0, 0, 0.33);
+  }
+  .congratulation__body-text {
+    margin: 0;
+    line-height: 1;
+  }
+  .congratulation__body-btn {
+    max-width: 500px;
+    margin: 0;
+    top: 36px;
+    margin-top: -21px;
+  }
+  .congratulation__timer {
+    margin: 0;
+    background-image: none;
+    background: linear-gradient(45deg, #393939 0%, #1a1a1a 100%);
+    max-width: 100%;
+    padding-bottom: 20px;
+    padding-top: 65px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .reelsection__head {
+    font-size: 25px;
+  }
+  .reel__head {
+    font-size: 32px;
+  }
+  .reel__disc {
+    font-size: 20px;
+    min-width: 120px;
+    min-height: 120px;
+    padding: 30px 0px;
+    top: 42px;
+  }
+  .reel__disc-val {
+    font-size: 40px;
+  }
+  .reel__body {
+    padding-top: 20px;
+  }
+  .reel__body-head {
+    font-size: 20px;
+  }
+  .reel__counter {
+    max-width: 370px;
+  }
+  .reel__counter-item-box {
+    min-width: 120px;
+  }
+  .reel__counter-item {
+    height: 150px;
+    background-size: cover;
+    background-position-y: 23px;
+  }
+  .reel__timer {
+    padding: 15px;
+  }
+  .reel__attempts {
+    width: 140px;
+    height: 210px;
+    bottom: -10px;
+    left: 201px;
+  }
+  .reel__attempts-head {
+    font-size: 20px;
+    left: 0;
+    top: 54px;
+  }
+  .reel__attempts-count {
+    width: 50px;
+    height: 50px;
+    font-size: 32px;
+    left: 29px;
+    top: 135px;
+  }
+  .reel__body-btn-box {
+    margin-left: 0;
+  }
+  .reel__timer-res-text {
+    font-size: 24px;
+  }
+  .reel__timer-res-val-box {
+    font-size: 35px;
+  }
+  .reel__timer-count-head {
+    font-size: 20px;
+  }
+  .counter {
+    font-size: 45px;
+  }
+  .congratulation__body-head {
+    font-size: 24px;
+    padding: 20px;
+  }
+  .congratulation__body-text {
+    font-size: 35px;
+    padding: 20px;
+  }
+  .congratulation__body-btn {
+    max-width: 350px;
+    font-size: 30px;
+    top: 30px;
+  }
+  .congratulation__timer-head {
+    max-width: 100%;
+    font-size: 24px;
+  }
+  .reel__footer {
+    max-width: 370px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .reelsection__head {
+    padding: 0 10px;
+    padding-bottom: 15px;
+  }
+  .reel__head {
+    font-size: 21px;
+    padding: 20px 20px;
+  }
+  .reel__disc {
+    right: 9px;
+    top: 21px;
+    font-size: 17px;
+    min-width: 95px;
+    min-height: 95px;
+    padding: 17px 0px;
+  }
+  .reel__body-head {
+    margin: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .reel__body {
+    padding: 10px;
+  }
+  .reel__counter-item-box {
+    min-width: 97px;
+    padding: 2px;
+  }
+  .reel__counter {
+    max-width: 300px;
+  }
+  .reel__footer {
+    max-width: 300px;
+  }
+  .reel__counter-item {
+    height: 122px;
+    background-position-y: 16px;
+  }
+  .reel__body-btn-box {
+    width: 110px;
+    height: 110px;
+    padding: 15px;
+    padding-left: 14px;
+    background-position: -5px -4px;
+  }
+  .reel__attempts {
+    width: 140px;
+    height: 200px;
+    bottom: -26px;
+    left: 161px;
+  }
+  .congratulation__body-btn {
+    max-width: 265px;
+    font-size: 26px;
+    top: 28px;
+  }
+  .reel__attempts-count {
+    left: 17px;
+    top: 127px;
+  }
+  .congratulation {
+    margin-top: -23px;
+  }
+  
+}
+
+
+
+
+
+
+
