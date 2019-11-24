@@ -16,11 +16,12 @@
 
                     @foreach($ret as $key => $data)
                         <tr>    
-                        <th>{{$data->id_user}}</th>
-                        <th>{{$data->nama_user}}</th>
-                        <th>{{$data->alamat}}</th>
-                        <th>{{$data->no_telp}}</th>
-                        <th>{{$data->id_lokasi}}</th>                 
+                        <th>{{$data->id}}</th>
+                        <th>{{$data->name}}</th>
+                        <th>{{$data->phone}}</th>
+                        <th>{{$data->address}}</th>
+                        <th>{{$data->order_id}}</th>  
+                        <th>{{$data->status}}</th>                 
                         </tr>
                     @endforeach
                 </div>
