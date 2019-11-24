@@ -19,9 +19,17 @@
                         </div>
                     @endif
 
-                    @include('table-view::container', ['tableView' => $usersTableView])
 
-
+                    @foreach($ret as $key => $data)
+                        <tr>    
+                        <th>{{$data->id}}</th>
+                        <th>{{$data->name}}</th>
+                        <th>{{$data->phone}}</th>
+                        <th>{{$data->address}}</th>
+                        <th>{{$data->order_id}}</th>  
+                        <th>{{$data->status}}</th>                 
+                        </tr>
+                    @endforeach
                 </div>
             </div>
         </div>
