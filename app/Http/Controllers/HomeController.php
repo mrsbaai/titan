@@ -27,7 +27,7 @@ class HomeController extends Controller
     {
 
         
-        $ret = DB::table('costumers')->pluck('id', 'name', 'address', 'phone', 'email', 'status','order_id');
+        $ret = DB::table('costumers')->get();
   
         return view('home', ['ret' => $ret]);
     }
