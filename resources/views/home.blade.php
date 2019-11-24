@@ -19,9 +19,13 @@
                     <table class="table">
                         <thead class="thead-dark">
                         <tr>
-                            <th>Firstname</th>
-                            <th>Lastname</th>
-                            <th>Email</th>
+                            <th>id</th>
+                            <th>name</th>
+                            <th>phone</th>
+                            <th>created_at</th>
+                            <th>updated_at</th>
+                            <th>status</th>
+              
                         </tr>
                         </thead>
                         <tbody>
@@ -30,8 +34,6 @@
                             <th>{{$data->id}}</th>
                             <th>{{$data->name}}</th>
                             <th>{{$data->phone}}</th>
-                            <th>{{$data->address}}</th>
-                            <th>{{$data->order_id}}</th>  
                             <th>{{$data->created_at}}</th>   
                             <th>{{$data->updated_at}}</th>   
                             <th>{{$data->status}}</th>                 
