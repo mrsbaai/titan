@@ -28,7 +28,15 @@ class HomeController extends Controller
 
         
         $ret = DB::table('costumers')->get();
+
+        $usersTableView = TableView::collection( $ret );
+        $usersTableView = $usersTableView->build();
+
+        return view('home', [
+            'usersTableView' => $usersTableView
+        ]);
+    
   
-        return view('home', ['ret' => $ret]);
+
     }
 }

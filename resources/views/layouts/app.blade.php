@@ -19,6 +19,10 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    <link href="{{ asset('vendor/table-view/bootstrap.min.css') }}" rel="stylesheet" />
+    <link href="{{ asset('vendor/table-view/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" />
+    <link href="{{ asset('vendor/table-view/css/themes/tableview-a.css') }}" rel="stylesheet" />
 </head>
 <body>
     <div id="app">

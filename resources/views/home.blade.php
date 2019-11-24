@@ -1,5 +1,10 @@
 @extends('layouts.app')
 
+
+<script src="{{ asset('vendor/table-view/js/jquery-1.9.1.min.js') }}"></script>
+
+@include('table-view::scripts')
+
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -14,16 +19,9 @@
                         </div>
                     @endif
 
-                    @foreach($ret as $key => $data)
-                        <tr>    
-                        <th>{{$data->id}}</th>
-                        <th>{{$data->name}}</th>
-                        <th>{{$data->phone}}</th>
-                        <th>{{$data->address}}</th>
-                        <th>{{$data->order_id}}</th>  
-                        <th>{{$data->status}}</th>                 
-                        </tr>
-                    @endforeach
+                    @include('table-view::container', ['tableView' => $usersTableView])
+
+
                 </div>
             </div>
         </div>
