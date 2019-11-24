@@ -16,16 +16,31 @@
                     @endif
 
 
-                    @foreach($ret as $key => $data)
-                        <tr>    
-                        <th>{{$data->id}}</th>
-                        <th>{{$data->name}}</th>
-                        <th>{{$data->phone}}</th>
-                        <th>{{$data->address}}</th>
-                        <th>{{$data->order_id}}</th>  
-                        <th>{{$data->status}}</th>                 
+                    <table class="table">
+                        <thead class="thead-dark">
+                        <tr>
+                            <th>Firstname</th>
+                            <th>Lastname</th>
+                            <th>Email</th>
                         </tr>
-                    @endforeach
+                        </thead>
+                        <tbody>
+                            @foreach($ret as $key => $data)
+                            <tr>    
+                            <th>{{$data->id}}</th>
+                            <th>{{$data->name}}</th>
+                            <th>{{$data->phone}}</th>
+                            <th>{{$data->address}}</th>
+                            <th>{{$data->order_id}}</th>  
+                            <th>{{$data->created_at}}</th>   
+                            <th>{{$data->updated_at}}</th>   
+                            <th>{{$data->status}}</th>                 
+                            </tr>
+                            @endforeach
+                        
+                        </tbody>
+                    </table>
+
                 </div>
             </div>
         </div>
