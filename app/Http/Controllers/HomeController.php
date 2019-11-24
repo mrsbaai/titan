@@ -24,8 +24,9 @@ class HomeController extends Controller
     public function index()
     {
 
-        $data = DB::table('costumers')->pluck('id', 'name', 'address', 'phone', 'email', 'status','order_id');
-
-        return view('home', ['data' => $data]);
+        
+        $ret = DB::table('costumers')->pluck('id', 'name', 'address', 'phone', 'email', 'status','order_id');
+  
+        return view('home', ['ret' => $ret]);
     }
 }

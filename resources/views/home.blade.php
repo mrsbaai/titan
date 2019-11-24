@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    @foreach($petani as $key => $data)
+                    @foreach($ret as $key => $data)
                         <tr>    
                         <th>{{$data->id_user}}</th>
                         <th>{{$data->nama_user}}</th>
