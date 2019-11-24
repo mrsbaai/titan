@@ -1,10 +1,6 @@
 @extends('layouts.app')
 
 
-<script src="{{ asset('vendor/table-view/js/jquery-1.9.1.min.js') }}"></script>
-
-@include('table-view::scripts')
-
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
