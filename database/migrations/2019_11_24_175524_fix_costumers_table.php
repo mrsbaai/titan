@@ -13,7 +13,7 @@ class FixCostumersTable extends Migration
      */
     public function up()
     {
-        Schema::table('users', function($table) {
+        Schema::table('costumers', function($table) {
             $table->dropColumn('email');
             $table->dropColumn('phone');
             $table->string('phone')->unique()->default("No_Phone");
@@ -28,7 +28,7 @@ class FixCostumersTable extends Migration
      */
     public function down()
     {
-        Schema::table('users', function($table) {
+        Schema::table('costumers', function($table) {
             $table->dropColumn('email');
             $table->dropColumn('phone');
             $table->string('phone')->nullable();
