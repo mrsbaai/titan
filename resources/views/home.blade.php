@@ -6,7 +6,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Dashboard</div>
+                <div class="card-header">New Orders</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -19,12 +19,11 @@
                     <table class="table">
                         <thead class="thead-dark">
                         <tr>
-                            <th>id</th>
-                            <th>name</th>
-                            <th>phone</th>
-                            <th>created_at</th>
-                            <th>updated_at</th>
-                            <th>status</th>
+                            <th>ID</th>
+                            <th>Costumer Name</th>
+                            <th>Phone</th>
+                            <th>Date</th>
+                            <th></th>
               
                         </tr>
                         </thead>
@@ -34,9 +33,9 @@
                             <th>{{$data->id}}</th>
                             <th>{{$data->name}}</th>
                             <th>{{$data->phone}}</th>
-                            <th>{{$data->created_at}}</th>   
-                            <th>{{$data->updated_at}}</th>   
-                            <th>{{$data->status}}</th>                 
+                            <th>{{$data->created_at}}</th>    
+                            <th>{{$data->status}}</th>   
+                            <td><a href="/consult/{{$data->id}}"><button type="button" class="btn btn-success">Consult</button></a></td>              
                             </tr>
                             @endforeach
                         
