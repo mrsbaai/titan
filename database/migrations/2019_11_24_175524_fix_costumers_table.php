@@ -16,8 +16,7 @@ class FixCostumersTable extends Migration
         Schema::table('costumers', function($table) {
             $table->dropColumn('email');
             $table->dropColumn('phone');
-            $table->string('phone')->unique()->default("No_Phone");
-            $table->string('email')->unique()->default("No_Email");
+
         });
     }
 
@@ -29,8 +28,6 @@ class FixCostumersTable extends Migration
     public function down()
     {
         Schema::table('costumers', function($table) {
-            $table->dropColumn('email');
-            $table->dropColumn('phone');
             $table->string('phone')->nullable();
             $table->string('email')->unique();
         });
