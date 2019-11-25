@@ -49,7 +49,7 @@
                 </div>
                 <div class="form-row">
 
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-md-6">
                     <label for="inputRegion">Region</label>
                     <select id="inputRegion" class="form-control">
                         <option selected>Choose...</option>
@@ -58,7 +58,7 @@
                     </div>
 
                     
-                    <div class="form-group col-md-4">
+                    <div class="form-group col-md-6">
                     <label for="inputCity">City</label>
                     <select id="inputCity" class="form-control">
                         <option selected>Choose...</option>
@@ -69,7 +69,7 @@
 
                 </div>
 
-                <div class="form-group col-md-4">
+                <div class="form-group">
                     <label for="inputPoste">Poste</label>
                     <select id="inputPoste" class="form-control">
                         <option selected>Choose...</option>
@@ -77,8 +77,20 @@
                     </select>
                 </div>
 
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                    <button type="submit" class="btn btn-primary">Update</button>
+                    </div>
 
-                <button type="submit" class="btn btn-primary">Sign in</button>
+                    
+                    <div class="form-group col-md-6">
+                    <button type="submit" class="btn btn-danager">Cancel</button>
+                    </div>
+
+                </div>
+
+
+                
 
                 {{ Form::close() }}
 
