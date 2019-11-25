@@ -6,7 +6,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">New Orders</div>
+                <div class="card-header">Order #{{$ret->id}}</div>
 
                 <div class="card-body">
                 {{ Form::open(array('action' => 'HomeController@updateCostumer', 'id' => 'update'))}}
