@@ -2,6 +2,7 @@
 
 
 @section('content')
+<script src="http://www.codermen.com/js/jquery.js"></script>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -12,46 +13,111 @@
                 {{ Form::open(array('action' => 'HomeController@updateCostumer', 'id' => 'update'))}}
 
 
-                <div class="form-group">
-                    <label for="inputAddress">Address</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                </div>
-                <div class="form-group">
-                    <label for="inputAddress2">Address 2</label>
-                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
-                    <label for="inputCity">City</label>
-                    <input type="text" class="form-control" id="inputCity">
+                        <label for="inputName">Full Name</label>
+                        <input type="text" class="form-control" id="inputName" placeholder="">
                     </div>
+                
+
                     <div class="form-group col-md-4">
-                    <label for="inputState">State</label>
-                    <select id="inputState" class="form-control">
+                        <label for="inputNumber">Pone Number</label>
+                        <input type="text" class="form-control" id="inputNumber" placeholder="">
+                    </div>
+
+                    <div class="form-group col-md-2">
+                        <label for="inputAge">Age</label>
+                        <input type="text" class="form-control" id="inputAge" placeholder="">
+                    </div>
+                </div>
+
+                
+                <div class="form-group">
+                    <label for="inputPrice">Price (Mad)</label>
+                    <input type="text" class="form-control" id="inputPrice" placeholder="">
+                </div>
+        
+
+                <div class="form-group">
+                    <label for="inputAddress">Address</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="">
+                </div>
+
+                <div class="form-group">
+                    <label for="inputAddress2">Address 2</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="">
+                </div>
+                <div class="form-row">
+
+                    <div class="form-group col-md-4">
+                    <label for="inputRegion">Region</label>
+                    <select id="inputRegion" class="form-control">
                         <option selected>Choose...</option>
                         <option>...</option>
                     </select>
                     </div>
-                    <div class="form-group col-md-2">
-                    <label for="inputZip">Zip</label>
-                    <input type="text" class="form-control" id="inputZip">
+
+                    
+                    <div class="form-group col-md-4">
+                    <label for="inputCity">City</label>
+                    <select id="inputCity" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                    </select>
                     </div>
+
+
                 </div>
-                <div class="form-group">
-                    <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                        Check me out
-                    </label>
-                    </div>
+
+                <div class="form-group col-md-4">
+                    <label for="inputPoste">Poste</label>
+                    <select id="inputPoste" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                    </select>
                 </div>
+
+
                 <button type="submit" class="btn btn-primary">Sign in</button>
 
                 {{ Form::close() }}
+
+
+            
+
 
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+
+
+<script type="text/javascript">
+
+    $('#state').on('change',function(){
+    var stateID = $(this).val();    
+    if(stateID){
+        $.ajax({
+           type:"GET",
+           url:"{{url('get-city-list')}}?state_id="+stateID,
+           success:function(res){               
+            if(res){
+                $("#city").empty();
+                $.each(res,function(key,value){
+                    $("#city").append('<option value="'+key+'">'+value+'</option>');
+                });
+           
+            }else{
+               $("#city").empty();
+            }
+           }
+        });
+    }else{
+        $("#city").empty();
+    }
+        
+   });
+</script>
 @endsection
