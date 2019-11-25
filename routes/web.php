@@ -17,6 +17,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/consult/{id}', 'HomeController@consult')->name('consult');
+Route::get('/consult/{id}', 'HomeController@consult');
 
-Route::post('/consult/{id}', 'HomeController@updateCostumer')->name('consult');
+Route::post('/consult/{id}', 'HomeController@updateCostumer');
