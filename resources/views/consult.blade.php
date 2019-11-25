@@ -78,13 +78,38 @@
                 </div>
 
                 <div class="form-row">
+
+                    <div class="form-group col-md-6">
+                 
+                        <label for="inputPrice">Price (Mad)</label>
+                        <input type="text" class="form-control" id="inputPrice" placeholder="">
+        
+                    </div>
+                    
+                    <div class="form-group col-md-6">
+                    
+                        <div class="form-group">
+                            <label for="inputStatus">Status</label>
+                            <select id="inputStatus" class="form-control">
+                                <option selected>New</option>
+                                <option>Needs Shiping</option>
+                                <option>Shipped</option>
+                                <option>Completed</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="form-row">
                     <div class="form-group col-md-6">
                     <button type="submit" class="btn btn-primary">Update</button>
                     </div>
 
-                    
-                    <div class="form-group col-md-6">
-                    <button type="submit" class="btn btn-danager">Cancel</button>
+
+
+                    <div class="form-group col-md-6 text-right">
+                    <a href="/2"><button class="btn btn-danger">Next</button></a>
                     </div>
 
                 </div>
