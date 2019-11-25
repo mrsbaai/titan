@@ -31,4 +31,20 @@ class HomeController extends Controller
   
         return view('home', ['ret' => $ret]);
     }
+    public function updateCostumer(){
+        return "cc";
+
+    }
+
+    public function consult($id)
+    {
+
+        
+        $ret = DB::table('costumers')->where('id',$id)->first();
+  
+        return view('consult', ['ret' => $ret]);
+    }
+
+
 }
+
