@@ -19,4 +19,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/consult/{id}', 'HomeController@consult');
 
-Route::post('/consult/{id}', 'HomeController@updateCostumer');
+Route::post('/consult', 'HomeController@updateCostumer');
