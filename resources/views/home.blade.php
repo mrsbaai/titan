@@ -44,16 +44,15 @@
                     </table>
             <script type="text/javascript">
                 $(document).ready(function(){
-                    alert(1);
+          
                     refreshTable();
                 });
 
                 function refreshTable(){
-                    alert(2);
+                  
                     var table = document.getElementById('orders');
-                    alert(table.rows.length);
+        
                     for (var r = 1, n = table.rows.length; r < n; r++) {
-                        alert(table.rows[r].cells[4].innerText);
                         table.rows[r].cells[4].innerHTML = "[" + moment(moment.utc(table.rows[r].cells[4].innerText)).fromNow() + "]";
                     }
                 }
