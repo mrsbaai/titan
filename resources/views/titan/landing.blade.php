@@ -477,11 +477,15 @@
     }
     function checkPhone() {
         var phone = document.forms["new_order"]["phone"].value;
-        alert('المرجو إدخال رقم هاتفك الصحيح');
-        alert(phone);
+
         var phoneNum = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/; 
             if(phone.value.match(phoneNum)) {
-                return true;
+              document.getElementById("phone").className = document.getElementById("phone").className + " error";
+              
+              alert('المرجو إدخال رقم هاتفك الصحيح');
+              document.getElementById("phone").focus();
+              return false;
+
             }
             else {
 
