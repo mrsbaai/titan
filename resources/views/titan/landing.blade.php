@@ -478,8 +478,8 @@
     function checkPhone() {
         var phone = document.forms["new_order"]["phone"].value;
 
-        var patt = new RegExp(/(\+212|0)([ \-_/]*)(\d[ \-_/]*){9}/g);
-        alert(patt.test(phone));
+        var patt = new RegExp(/(\+212|0)([ \-_/]*)(\d[ \-_/]*){9}/);
+
         if(patt.test(phone) == true){
           return true;
 
