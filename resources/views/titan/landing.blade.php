@@ -478,20 +478,23 @@
     function checkPhone() {
         var phone = document.forms["new_order"]["phone"].value;
 
-        var phoneNum = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/; 
-            if(phone.value.match(phoneNum)) {
-              alert('good');
-                return true;
-                
-            }
-            else {
 
-                document.getElementById("phone").className = document.getElementById("phone").className + " error";
+        var phoneno = /^\+?([0-9]{2})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/;
+        if((phone.match(phoneno))
+              {
+                alert('good');
+            return true;
+              }
+            else
+              {
+                
               
-                alert('المرجو إدخال رقم هاتفك الصحيح');
-                document.getElementById("phone").focus();
-                return false;
-            }
+              alert('المرجو إدخال رقم هاتفك الصحيح');
+              document.getElementById("phone").focus();
+              return false;
+              }
+
+
         }
 </script>
 
