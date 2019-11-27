@@ -431,10 +431,10 @@
 <input class="input" name="name" placeholder="الاسم" type="text">
 </div>
 <div class="form__row">
-<input class="input only only_number" name="phone" id="phone" placeholder="رقم الهاتف" type="text" pattern="(\+212|0)([ \-_/]*)(\d[ \-_/]*){9}$" required title="المرجو إدخال رقم هاتفك الصحيح مثال: 0657435678">
+<input class="input only only_number" name="phone" id="phone" placeholder="رقم الهاتف" type="text" pattern="(\+212|0)([ \-_/]*)(\d[ \-_/]*){9}$" required title=" (EX: 0634561234) ">
 </div>
 <div class="form__row">
-<input class="input" min="0" name="age" placeholder="عمر" type="number">
+<input class="input" min="18" name="age" placeholder="عمر" type="number">
 </div>
 <!--  <div class="ramadanAction">
     بمناسبة شهر رمضان الكريم، و عند شراء أحد منتوجاتنا، سوف تحصلون على جوائز 
