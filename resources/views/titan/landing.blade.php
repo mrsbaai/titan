@@ -479,7 +479,8 @@
         var phone = document.forms["new_order"]["phone"].value;
 
         var patt = new RegExp(/(\+212|0)([ \-_/]*)(\d[ \-_/]*){9}/g);
-        if(patt.test(phone)){
+        alert(patt.test(phone));
+        if(patt.test(phone) == true){
           return true;
 
         }else{
