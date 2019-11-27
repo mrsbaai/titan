@@ -33,7 +33,7 @@
                             <th>{{$data->id}}</th>
                             <th>{{$data->name}}</th>
                             <th>{{$data->phone}}</th>
-                            <th>{{$data->created_at}}</th>    
+                            <th><script>document.write(moment(moment.utc{{$data->created_at}}).fromNow());</script></th>    
                             <th><a href="/consult/{{$data->id}}"><button type="button" class="btn btn-success">Consult</button></a></th>              
                             </tr>
                             @endforeach
@@ -47,3 +47,5 @@
     </div>
 </div>
 @endsection
+
+
