@@ -477,25 +477,12 @@
     }
     function checkPhone() {
         var phone = document.forms["new_order"]["phone"].value;
-
-
-        var phoneno = /^\+?([0-9]{2})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/;
-        if((phone.match(phoneno))
-              {
-                alert('good');
-            return true;
-              }
-            else
-              {
-                
-              
+alert(phone);
               alert('المرجو إدخال رقم هاتفك الصحيح');
               document.getElementById("phone").focus();
               return false;
               }
 
-
-        }
 </script>
 
 
