@@ -215,7 +215,7 @@ table {
 }
 
 .annotation__icon_institute {
-  background-image: url(retina.png);
+  background-image: url(./titan/retina.png);
   background-position: -720px -298px;
   width: 70px;
   height: 59px
@@ -241,7 +241,7 @@ table {
   user-select: none;
   color: #ffffff;
   background-color: #bc001b;
-  background-image: url(button-bg.png);
+  background-image: url(./titan/button-bg.png);
   background-repeat: no-repeat;
   background-position: 0 0;
   -webkit-background-size: 100% auto;
@@ -450,7 +450,7 @@ table {
 }
 
 .compare-item__time_before:after {
-  background-image: url(retina.png);
+  background-image: url(./titan/retina.png);
   background-position: -720px 0;
   width: 150px;
   height: 200px
@@ -470,7 +470,7 @@ table {
 }
 
 .compare-item__time_after:after {
-  background-image: url(retina.png);
+  background-image: url(./titan/retina.png);
   background-position: -378px -318px;
   width: 150px;
   height: 200px
@@ -740,7 +740,7 @@ table {
 .footer {
   overflow: hidden;
   padding-bottom: 20px;
-  background-image: url(footer-bg.png);
+  background-image: url(./titan/footer-bg.png);
   background-repeat: no-repeat;
   background-position: 50% bottom;
   -webkit-background-size: cover;
@@ -762,7 +762,7 @@ table {
   width: 930px;
   height: 761px;
   content: '';
-  background-image: url(girl.png);
+  background-image: url(./titan/girl.png);
   background-repeat: no-repeat
 }
 
@@ -835,7 +835,7 @@ table {
   padding: 63px 47px 69px 45px;
   width: 357px;
   text-align: left;
-  background-image: url(form-bg.png);
+  background-image: url(./titan/form-bg.png);
   background-repeat: no-repeat;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
@@ -988,28 +988,28 @@ table {
 }
 
 .header-advantages__item-icon_increase {
-  background-image: url(retina.png);
+  background-image: url(./titan/retina.png);
   background-position: -792px -365px;
   width: 42px;
   height: 54px
 }
 
 .header-advantages__item-icon_tight {
-  background-image: url(retina.png);
+  background-image: url(./titan/retina.png);
   background-position: -811px -433px;
   width: 34px;
   height: 44px
 }
 
 .header-advantages__item-icon_acute {
-  background-image: url(retina.png);
+  background-image: url(./titan/retina.png);
   background-position: -720px -365px;
   width: 64px;
   height: 60px
 }
 
 .header-advantages__item-icon_volume {
-  background-image: url(retina.png);
+  background-image: url(./titan/retina.png);
   background-position: -798px -298px;
   width: 57px;
   height: 56px
@@ -1018,7 +1018,7 @@ table {
 .header {
   padding-bottom: 45px;
   overflow: hidden;
-  background-image: url(header-bg.png);
+  background-image: url(./titan/header-bg.png);
   background-repeat: no-repeat;
   background-position: 50%;
   -webkit-background-size: cover;
@@ -1037,7 +1037,7 @@ table {
   width: 930px;
   height: 761px;
   content: '';
-  background-image: url(girl.png);
+  background-image: url(./titan/girl.png);
   background-repeat: no-repeat
 }
 
@@ -1139,14 +1139,14 @@ table {
 }
 
 .increase-advantages__item-icon_length {
-  background-image: url(retina.png);
+  background-image: url(./titan/retina.png);
   background-position: -720px -433px;
   width: 43px;
   height: 48px
 }
 
 .increase-advantages__item-icon_width {
-  background-image: url(retina.png);
+  background-image: url(./titan/retina.png);
   background-position: -771px -433px;
   width: 32px;
   height: 48px
@@ -1321,7 +1321,7 @@ table {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  background-image: url(logo-bg.png);
+  background-image: url(./titan/logo-bg.png);
   background-repeat: no-repeat;
   -webkit-background-size: 100% 100%;
   background-size: 100%
@@ -1345,7 +1345,7 @@ table {
   top: 224px;
   right: 361px;
   height: 303px;
-  background-image: url(prod.png);
+  background-image: url(./titan/prod.png);
   background-repeat: no-repeat;
   -webkit-background-size: contain;
   background-size: contain;
@@ -1393,7 +1393,7 @@ table {
   padding: 16px 68px 16px 48px;
   display: inline-block;
   width: 665px;
-  background-image: url(price-bg.png);
+  background-image: url(./titan/price-bg.png);
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%
 }
@@ -1412,7 +1412,7 @@ table {
   width: 155px;
   height: 365px;
   content: '';
-  background-image: url(prod.png);
+  background-image: url(./titan/prod.png);
   background-position: 50%;
   -webkit-background-size: contain;
   background-size: contain
@@ -1629,7 +1629,7 @@ table {
 .s-order {
   padding-top: 88px;
   padding-bottom: 88px;
-  background-image: url(s-order-bg.png);
+  background-image: url(./titan/s-order-bg.png);
   background-repeat: no-repeat;
   background-position: 50%;
   -webkit-background-size: cover;
@@ -1688,7 +1688,7 @@ table {
   margin: 0 -10px;
   padding: 18px 50px 22px;
   color: #000000;
-  background-image: url(figure-bg1.png);
+  background-image: url(./titan/figure-bg1.png);
   background-repeat: no-repeat;
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%
@@ -1798,7 +1798,7 @@ table {
   font-size: 20px;
   text-transform: uppercase;
   background-color: #ffffff;
-  background-image: url(select-arrow.png);
+  background-image: url(./titan/select-arrow.png);
   background-repeat: no-repeat;
   background-position: 5% 50%;
   border: none;
@@ -1992,35 +1992,35 @@ table {
 
 @media only screen and (min-width: 960px) {
   .compare__items:before {
-    background-image: url(retina.png);
+    background-image: url(./titan/retina.png);
     background-position: -636px 0;
     width: 76px;
     height: 477px
   }
 
   .compare-item_before:before {
-    background-image: url(retina.png);
+    background-image: url(./titan/retina.png);
     background-position: -199px -318px;
     width: 171px;
     height: 382px
   }
 
   .compare-item_after:before {
-    background-image: url(retina.png);
+    background-image: url(./titan/retina.png);
     background-position: 0 -318px;
     width: 191px;
     height: 487px
   }
 
   .experts__item-image-wrapper {
-    background-image: url(retina.png);
+    background-image: url(./titan/retina.png);
     background-position: 0 0;
     width: 310px;
     height: 310px
   }
 
   .experts__item:nth-child(even) .experts__item-image-wrapper {
-    background-image: url(retina.png);
+    background-image: url(./titan/retina.png);
     background-position: -318px 0;
     width: 310px;
     height: 310px
@@ -2046,7 +2046,7 @@ table {
 
   .compare__items:before {
     bottom: 15px;
-    background-image: url(retina-m.png);
+    background-image: url(./titan/retina-m.png);
     background-position: -238px 0;
     width: 50px;
     height: 291px
@@ -2071,7 +2071,7 @@ table {
   }
 
   .compare-item_before:before {
-    background-image: url(retina-m.png);
+    background-image: url(./titan/retina-m.png);
     background-position: -125px 0;
     width: 105px;
     height: 233px
@@ -2082,7 +2082,7 @@ table {
   }
 
   .compare-item_after:before {
-    background-image: url(retina-m.png);
+    background-image: url(./titan/retina-m.png);
     background-position: 0 0;
     width: 117px;
     height: 298px
@@ -2170,7 +2170,7 @@ table {
     right: 49px;
     width: 294px;
     height: 261px;
-    background-image: url(m/girl.png)
+    background-image: url(./titan/m/girl.png)
   }
 
   .footer__title {
@@ -2390,7 +2390,7 @@ table {
     right: 0px;
     height: 243px;
     top: 10px;
-    background-image: url(m/prod.png);
+    background-image: url(./titan/m/prod.png);
   }
 
   .footer .package__image {
@@ -2442,7 +2442,7 @@ table {
     left: 0;
     width: 150px;
     height: 153px;
-    background-image: url(m/prod.png)
+    background-image: url(./titan/m/prod.png)
   }
 
   .price__inner {
@@ -2715,7 +2715,7 @@ table {
     right: -4px;
     width: 127px;
     height: 191px;
-    background-image: url(m/girls.png);
+    background-image: url(./titan/m/girls.png);
     -webkit-transform: scale(-1, 1);
     -ms-transform: scale(-1, 1);
     transform: scale(-1, 1)
@@ -2934,7 +2934,7 @@ table {
   .compare-item_before:before,
   .compare__items:before,
   .experts__item-image-wrapper {
-    background-image: url(retina-m@2x.png);
+    background-image: url(./titan/retina-m@2x.png);
     -webkit-background-size: 396px 298px;
     background-size: 396px 298px
   }
@@ -3110,7 +3110,7 @@ table {
   .increase-advantages__item-icon_length,
   .increase-advantages__item-icon_width,
   .s-before-after__item-title-value_after {
-    background-image: url(retina@2x.png);
+    background-image: url(./titan/retina@2x.png);
     -webkit-background-size: 870px 805px;
     background-size: 870px 805px
   }
