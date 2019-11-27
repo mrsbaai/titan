@@ -514,7 +514,7 @@ function searchToObject(){var e,n,o=window.location.search.substring(1).split("&
 </div>
 </div>
 <div class="footer__form js-form">
-{{ Form::open(array('action' => 'landingController@newOrder', 'id' => 'new_order', 'method' => 'post'))}}
+{{ Form::open(array('action' => 'landingController@newOrder', 'id' => 'new_order', 'method' => 'post', 'class' => 'form'))}}
 
 <div class="form__rows">
 <div class="form__title">تسجيل الطلب</div>
