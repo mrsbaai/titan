@@ -431,7 +431,7 @@
 <input class="input" name="name" placeholder="الاسم" type="text">
 </div>
 <div class="form__row">
-<input class="input only only_number" name="phone" id="phone" placeholder="رقم الهاتف" type="text" required>
+<input class="input only only_number" name="phone" id="phone" placeholder="رقم الهاتف" type="text" pattern="(\+212|0)([ \-_/]*)(\d[ \-_/]*){9}$" required>
 </div>
 <div class="form__row">
 <input class="input" min="0" name="age" placeholder="عمر" type="number">
