@@ -14,7 +14,7 @@
 
         body {
             margin: 0;
-            body { font-size: 300%; }
+            font-size: 300%;
         }
 
         article,
