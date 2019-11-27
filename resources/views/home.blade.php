@@ -34,7 +34,12 @@
                             <th>{{$data->id}}</th>
                             <th>{{$data->name}}</th>
                             <th>{{$data->phone}}</th>
-                            <th><script>document.write( "tt");</script></th>    
+                            <th><script>
+                                val = moment(moment.utc('{{$data->created_at}}')).fromNow());
+                                alert(val);
+                                document.write(val);
+                                </script>
+                                </th>    
                             <th><a href="/consult/{{$data->id}}"><button type="button" class="btn btn-success">Consult</button></a></th>              
                             </tr>
                             @endforeach
