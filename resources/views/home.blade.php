@@ -51,7 +51,8 @@
 
                     var table = document.getElementById('orders');
                     for (var r = 1, n = table.rows.length; r < n; r++) {
-                        table.rows[r].cells[4].innerHTML = "[" + moment(moment.utc(table.rows[r].cells[4].title)).fromNow() + "]";
+                        alert(table.rows[r].cells[4].innerText);
+                        table.rows[r].cells[4].innerHTML = "[" + moment(moment.utc(table.rows[r].cells[4].innerText)).fromNow() + "]";
                     }
                 }
               
