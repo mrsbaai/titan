@@ -16,7 +16,7 @@
                     @endif
 
 
-                    <table class="table">
+                    <table class="table" name="orders" id="orders">
                         <thead class="thead-dark">
                         <tr>
                             <th>ID</th>
@@ -34,18 +34,28 @@
                             <th>{{$data->id}}</th>
                             <th>{{$data->name}}</th>
                             <th>{{$data->phone}}</th>
-                            <th><script>
-                                val = moment(moment.utc('{{$data->created_at}}')).fromNow());
-                                alert(val);
-                                document.write(val);
-                                </script>
-                                </th>    
+                            <th>{{$data->created_at}}</th>    
                             <th><a href="/consult/{{$data->id}}"><button type="button" class="btn btn-success">Consult</button></a></th>              
                             </tr>
                             @endforeach
                         
                         </tbody>
                     </table>
+            <script type="text/javascript">
+                $(document).ready(function(){
+                    refreshTable();
+                });
+
+                function refreshTable(){
+
+                    var table = document.getElementById('orders');
+                    for (var r = 1, n = table.rows.length; r < n; r++) {
+                        table.rows[r].cells[3].innerHTML = "[" + moment(moment.utc(table.rows[r].cells[3].title)).fromNow() + "]";
+                    }
+                }
+              
+                     
+            </script>
 
                 </div>
             </div>
