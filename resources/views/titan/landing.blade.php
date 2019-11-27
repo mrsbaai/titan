@@ -480,12 +480,9 @@
 
         var phoneNum = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/; 
             if(phone.value.match(phoneNum)) {
-              document.getElementById("phone").className = document.getElementById("phone").className + " error";
-              
-              alert('المرجو إدخال رقم هاتفك الصحيح');
-              document.getElementById("phone").focus();
-              return false;
-
+              alert('good');
+                return true;
+                
             }
             else {
 
