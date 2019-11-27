@@ -9,6 +9,7 @@
             line-height: 1.15;
             -ms-text-size-adjust: 100%;
             -webkit-text-size-adjust: 100%;
+            font-size: 300%;
         }
 
         body {
@@ -462,12 +463,14 @@
             <div class="list-info">
                 <ul class="list-info__list">
                     <li class="list-info__item">
-                        <span class="list-info__text">:الاسم</span>
-                        {{$name}}
+                        <span class="list-info__text">{{$name}}</span>
+                        :الاسم
+                        
                     </li>
                     <li class="list-info__item">
-                        <span class="list-info__text">:رقم الهاتف</span>
-                        {{$phone}}
+                        <span class="list-info__text">{{$phone}}</span>
+                        :رقم الهاتف
+                       
                     </li>
                 </ul>
             </div>
