@@ -2170,7 +2170,7 @@ table {
     right: 49px;
     width: 294px;
     height: 261px;
-    background-image: url(m/girl.png)
+    background-image: url(girl.png)
   }
 
   .footer__title {
@@ -2390,7 +2390,7 @@ table {
     right: 0px;
     height: 243px;
     top: 10px;
-    background-image: url(m/prod.png);
+    background-image: url(prod.png);
   }
 
   .footer .package__image {
@@ -2442,7 +2442,7 @@ table {
     left: 0;
     width: 150px;
     height: 153px;
-    background-image: url(m/prod.png)
+    background-image: url(prod.png)
   }
 
   .price__inner {
@@ -2715,7 +2715,7 @@ table {
     right: -4px;
     width: 127px;
     height: 191px;
-    background-image: url(m/girls.png);
+    background-image: url(girls.png);
     -webkit-transform: scale(-1, 1);
     -ms-transform: scale(-1, 1);
     transform: scale(-1, 1)
