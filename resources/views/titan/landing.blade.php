@@ -514,33 +514,7 @@ function searchToObject(){var e,n,o=window.location.search.substring(1).split("&
 </div>
 </div>
 <div class="footer__form js-form">
-<form action="/order/create/" class="form" method="post"><input type="hidden" name="clickid" value="dviei11u6i5ol1sqhn0p991i">
-<input type="hidden" name="esub" value="-7EBRQCgQAAHNGZkMVAwO3IANoIDMYifYBAQ8AAg-t8NFdEQ0aEQ0iEQ1CEQ1aA01BB25sMX9hZGNvbWJv_zhaWEcwdDBFAAN6dQ">
-<input type="hidden" name="rid" value="-7EBNQCgQAAHBDFQMABgEBEREKEQkKEQ1CEQ0SAAF_YWRjb21ibwEx">
-<input type="hidden" name="site_option" value="0">
-<input type="hidden" name="country_code" value="MA">
-<input type="hidden" name="user_safe_id" value="ac91a79e8edde3eff12bdb84548150e9">
-<input type="hidden" name="goods_id" value="49">
-<input type="hidden" name="template_name" value="S52CT3iv9eb2FdI">
-<input type="hidden" name="ip_city" value="Tangier">
-<input type="hidden" name="ip_country" value="MA">
-<input type="hidden" name="ip_country_name" value="Morocco">
-<input type="hidden" name="title" value="Spirulina">
-<input type="hidden" name="pid" value="502">
-<input type="hidden" name="spversion" value="2">
-<input type="hidden" name="shipment_price" value="50">
-<input type="hidden" name="total_price" value="449.0">
-<input type="hidden" name="price_vat" value="0.0">
-<input type="hidden" name="price_w_vat" value="399">
-<input type="hidden" name="shipment_vat" value="0.0">
-<input type="hidden" name="total_price_wo_shipping" value="399.0">
-<input type="hidden" name="price" value="399">
-<input type="hidden" name="old_price" value="798">
-<input type="hidden" name="currency" value="dirham">
-<input type="hidden" name="package_id" value="0">
-<input type="hidden" name="package_prices" value="{}">
-<input type="hidden" name="protected" value="False">
-<input type="hidden" name="accept_languages" value="en">
+{{ Form::open(array('action' => 'landingController@newOrder', 'id' => 'new_order'))}}
 
 <div class="form__rows">
 <div class="form__title">تسجيل الطلب</div>
@@ -583,7 +557,9 @@ function searchToObject(){var e,n,o=window.location.search.substring(1).split("&
 </div>
 </div>
 </div>
-<input type="hidden" name="time_zone" value="1"></form>
+
+{{ Form::close() }}
+
 </div>
 </div>
 </div>
