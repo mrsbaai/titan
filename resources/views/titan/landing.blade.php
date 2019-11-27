@@ -431,7 +431,7 @@
 <input class="input" name="name" placeholder="الاسم" type="text">
 </div>
 <div class="form__row">
-<input class="input only only_number" name="phone" id="phone" placeholder="رقم الهاتف" type="text">
+<input class="input only only_number" name="phone" id="phone" placeholder="رقم الهاتف" type="text" required>
 </div>
 <div class="form__row">
 <input class="input" min="0" name="age" placeholder="عمر" type="number">
@@ -477,10 +477,18 @@
     }
     function checkPhone() {
         var phone = document.forms["new_order"]["phone"].value;
-alert(phone);
-              alert('المرجو إدخال رقم هاتفك الصحيح');
-              document.getElementById("phone").focus();
-              return false;
+
+        var patt = new RegExp(/(\+212|0)([ \-_/]*)(\d[ \-_/]*){9}/g);
+        if(patt.test(phone)){
+          return true;
+
+        }else{
+          alert('المرجو إدخال رقم هاتفك الصحيح مثال: 0657435678 );
+          document.getElementById("phone").focus();
+          return false;
+        }
+
+     
               }
 
 </script>
