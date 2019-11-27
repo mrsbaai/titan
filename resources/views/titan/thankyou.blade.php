@@ -32,25 +32,10 @@
 
             <p class="success-page__message_fail">
                 <a class="success-page__message_fail__link" href="javascript:history.back()">
-                    If you made a mistake, go back and fill the form again.
+                   .إذا قمت بخطأ ما ، فعليك العودة وملء النموذج مرة أخرى
                 </a>
             </p>
-            <h3 class="success-page__text">Please enter required information.</h3>
-
-            <form class="success-page__form" onsubmit="return false;" _lpchecked="1">
-                <span class="success-page__form__error" id="error_mail"></span>
-
-                <div class="success-page__form__container">
-                    <div><input name="email" placeholder="email" class="success-page__form__input"></div>
-                    
-                        <div><input name="address" placeholder="address" class="success-page__form__input">
-                        </div>
-                    
-                    <input type="hidden" name="order_id" value="12727471" class="success-page__form__input">
-                    <a class="success-page__form__button" href="#">Send</a>
-                </div>
-
-            </form>
+            
         
     </div>
 </div>
