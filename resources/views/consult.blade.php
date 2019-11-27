@@ -103,13 +103,19 @@
 
                 <div class="form-row">
                     <div class="form-group col-md-6">
-                    <button type="submit" class="btn btn-primary">Update</button>
+                    <button type="submit" class="btn btn-success">Update</button>
+                    </div>
+
+                    
+
+                    <div class="form-group col-md-6 text-right">
+                    <a href="/2/cancel"><button class="btn btn-danger">Cancel</button></a>
                     </div>
 
 
 
                     <div class="form-group col-md-6 text-right">
-                    <a href="/2"><button class="btn btn-danger">Next</button></a>
+                    <a href="/1/next"><button class="btn btn-primary">Next</button></a>
                     </div>
 
                 </div>
