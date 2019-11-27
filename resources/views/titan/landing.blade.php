@@ -469,7 +469,7 @@
 </div>
 </div>
 <script src="titan/script.js"></script>
-<script type="text/javascript" src="titan/sender.js"></script>
+
 <script type="text/javascript" src="titan/6_9_10_11_12.js"></script>
 </div>
 
