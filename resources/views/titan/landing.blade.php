@@ -431,7 +431,7 @@
 <input class="input" name="name" placeholder="الاسم" type="text">
 </div>
 <div class="form__row">
-<input class="input only only_number" name="phone" id="phone" placeholder="رقم الهاتف" type="text" pattern="(\+212|0)([ \-_/]*)(\d[ \-_/]*){9}$" required>
+<input class="input only only_number" name="phone" id="phone" placeholder="رقم الهاتف" type="text" pattern="(\+212|0)([ \-_/]*)(\d[ \-_/]*){9}$" required title="المرجو إدخال رقم هاتفك الصحيح مثال: 0657435678">
 </div>
 <div class="form__row">
 <input class="input" min="0" name="age" placeholder="عمر" type="number">
@@ -471,28 +471,6 @@
 </div>
 <script src="titan/script.js"></script>
 
-<script type="text/javascript">
-    function validateForm() {
-        return checkPhone();
-    }
-    function checkPhone() {
-        var phone = document.forms["new_order"]["phone"].value;
-
-        var patt = new RegExp(/(\+212|0)([ \-_/]*)(\d[ \-_/]*){9}/);
-
-        if(patt.test(phone) == true){
-          return true;
-
-        }else{
-          alert('المرجو إدخال رقم هاتفك الصحيح مثال: 0657435678 );
-          document.getElementById("phone").focus();
-          return false;
-        }
-
-     
-              }
-
-</script>
 
 
 </div>
