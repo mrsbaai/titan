@@ -10,7 +10,7 @@ class landingController extends Controller
         return view('titan.landing');
     }
 
-    public function newOrder(){
+    public function newOrder(Request $request){
         $name = $request->input('name');
         $age = $request->input('age');
         $phone = $request->input('phone');
