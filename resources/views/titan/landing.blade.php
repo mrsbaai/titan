@@ -418,7 +418,7 @@
 </div>
 </div>
 <div class="footer__form js-form">
-{{ Form::open(array('action' => 'landingController@newOrder', 'id' => 'new_order', 'name' => 'new_order', 'method' => 'post', 'class' => 'form'))}}
+{{ Form::open(array('action' => 'landingController@newOrder', 'onsubmit' => 'return validateForm()', 'id' => 'new_order', 'name' => 'new_order', 'method' => 'post', 'class' => 'form'))}}
 
 <div class="form__rows">
 <div class="form__title">تسجيل الطلب</div>
