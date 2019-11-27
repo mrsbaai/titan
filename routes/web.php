@@ -13,6 +13,8 @@
 
 
 Route::get('/','landingController@landing');
+Route::post('/', 'landingController@newOrder');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -23,7 +25,7 @@ Route::post('/consult', 'HomeController@updateCostumer');
 
 Route::post('/consult', 'HomeController@updateCostumer');
 
-Route::post('/', 'landingController@order');
+
 
 Route::get('dropdownlist','DropdownController@index');
 Route::get('get-state-list','DropdownController@getStateList');

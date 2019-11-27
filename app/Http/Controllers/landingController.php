@@ -11,6 +11,7 @@ class landingController extends Controller
     }
 
     public function newOrder(){
-        return view('titan.landing');
+
+        return view('titan.thankyou');
     }
 }
