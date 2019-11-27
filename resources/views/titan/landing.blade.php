@@ -431,7 +431,7 @@
 <input class="input" name="name" placeholder="الاسم" type="text">
 </div>
 <div class="form__row">
-<input class="input only only_number" name="phone" placeholder="رقم الهاتف" type="text">
+<input class="input only only_number" name="phone" id="phone" placeholder="رقم الهاتف" type="text">
 </div>
 <div class="form__row">
 <input class="input" min="0" name="age" placeholder="عمر" type="number">
@@ -482,7 +482,11 @@
                 return true;
             }
             else {
+
                 document.getElementById("phone").className = document.getElementById("phone").className + " error";
+               
+                alert('المرجو إدخال رقم هاتفك الصحيح');
+                document.getElementById("phone").focus();
                 return false;
             }
         }
