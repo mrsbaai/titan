@@ -9,11 +9,12 @@
             line-height: 1.15;
             -ms-text-size-adjust: 100%;
             -webkit-text-size-adjust: 100%;
-            font-size: 300%;
+   
         }
 
         body {
             margin: 0;
+            body { font-size: 300%; }
         }
 
         article,
