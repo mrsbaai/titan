@@ -34,7 +34,7 @@
                             <th>{{$data->id}}</th>
                             <th>{{$data->name}}</th>
                             <th>{{$data->phone}}</th>
-                            <th>{{$data->phone}}</th>
+                            <th>{{$data->status}}</th>
                             <th>{{$data->created_at}}</th>    
                             <th><a href="/consult/{{$data->id}}"><button type="button" class="btn btn-success">Consult</button></a></th>              
                             </tr>

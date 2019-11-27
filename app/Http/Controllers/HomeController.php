@@ -27,7 +27,7 @@ class HomeController extends Controller
     {
 
         
-        $ret = DB::table('costumers')->where('status','new')->orderBy('created_at', 'desc')->get();
+        $ret = DB::table('costumers')->orderBy('created_at', 'desc')->get();
   
         return view('home', ['ret' => $ret]);
     }
