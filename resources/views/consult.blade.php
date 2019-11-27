@@ -33,7 +33,7 @@
 
                 
                 <div class="form-group">
-                    <label for="inputPrice">Price (Mad)</label>
+                    <label for="inputPrice">Price (Dirhams) (With shipping)</label>
                     <input type="text" class="form-control" id="inputPrice" placeholder="">
                 </div>
         

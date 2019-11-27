@@ -15,6 +15,15 @@ class landingController extends Controller
         $age = $request->input('age');
         $phone = $request->input('phone');
 
+        $costumer = new costumer();
+ 
+        $costumer->name = request('name');
+        $costumer->age = request('age');
+        $costumer->phone = request('phone');
+        $costumer->price = "449";
+ 
+        $costumer->save();
+
         return view('titan.thankyou')->with('name', $name)->with('age', $age)->with('phone', $phone);
     }
 }
