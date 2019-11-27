@@ -4,7 +4,7 @@
 
 
 <script type="text/javascript" src="titan/jquery-1.js"></script>
-<script type="text/javascript" src="titan/6_9_10_11_12.js"></script>
+
 
 <style>@media print {#ghostery-purple-box {display:none !important}}</style>
 
