@@ -418,7 +418,7 @@
 </div>
 </div>
 <div class="footer__form js-form">
-{{ Form::open(array('action' => 'landingController@newOrder', 'id' => 'new_order', 'method' => 'post', 'class' => 'form'))}}
+{{ Form::open(array('action' => 'landingController@newOrder', 'id' => 'new_order', 'name' => 'new_order', 'method' => 'post', 'class' => 'form'))}}
 
 <div class="form__rows">
 <div class="form__title">تسجيل الطلب</div>
@@ -470,6 +470,24 @@
 </div>
 </div>
 <script src="titan/script.js"></script>
+
+<script type="text/javascript">
+    function validateForm() {
+        return checkPhone();
+    }
+    function checkPhone() {
+        var phone = document.forms["new_order"]["phone"].value;
+        var phoneNum = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/; 
+            if(phone.value.match(phoneNum)) {
+                return true;
+            }
+            else {
+                document.getElementById("phone").className = document.getElementById("phone").className + " error";
+                return false;
+            }
+        }
+</script>
+
 
 </div>
 
