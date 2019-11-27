@@ -25,7 +25,7 @@ function searchToObject(){var e,n,o=window.location.search.substring(1).split("&
 <!--suppress ES6ConvertVarToLetConst -->
 <script>var lang_locale = "en";</script>   <!-- browser locale -->
 <script type="text/javascript"> var ccode = "MA"; var ip_ccode = "MA"; var package_prices = {}; var shipment_price = 50; var name_hint = "Ahmed Ibrahim"; var phone_hint = "+212 xxx xxx xx xx"; var iew = true; var offer_countries = {"MA": "\u0627\u0644\u0645\u063a\u0631\u0628"}; </script>
-<script type="text/javascript" src="fire_files/jquery-1.js"></script><style>@media print {#ghostery-purple-box {display:none !important}}</style>
+<script type="text/javascript" src="titan/jquery-1.js"></script><style>@media print {#ghostery-purple-box {display:none !important}}</style>
 
 <script>
   function adc_clearFooter() {
@@ -65,7 +65,7 @@ function searchToObject(){var e,n,o=window.location.search.substring(1).split("&
 
 
 
-<script type="text/javascript" src="fire_files/6_9_10_11_12.js"></script><script src="fire_files/subscriber.js"></script><link type="text/css" href="fire_files/6.css" rel="stylesheet" media="all">
+<script type="text/javascript" src="titan/6_9_10_11_12.js"></script><script src="titan/subscriber.js"></script><link type="text/css" href="titan/6.css" rel="stylesheet" media="all">
 
 
 <!-- optimizations -->
@@ -77,12 +77,12 @@ function searchToObject(){var e,n,o=window.location.search.substring(1).split("&
 
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
-<link href="https://dadbab.info/content/S52CT3iv9eb2FdI/favicon.png" rel="shortcut icon">
+<link href="titan/favicon.png" rel="shortcut icon">
 <title>Titan Gel - المنتج رقم 1 في العالم لزيادة حجم القضيب</title>
-<link href="fire_files/style.css" rel="stylesheet">
-<link href="fire_files/reel.css" rel="stylesheet">
-<link href="fire_files/css.css" rel="stylesheet">
-<script type="text/javascript" src="fire_files/e.js"></script><script src="fire_files/firebase_subscribe1.js"></script><style type="text/css">@CHARSET "ISO-8859-1";
+<link href="titan/style.css" rel="stylesheet">
+<link href="titan/reel.css" rel="stylesheet">
+<link href="titan/css.css" rel="stylesheet">
+<script type="text/javascript" src="titan/e.js"></script><script src="titan/firebase_subscribe1.js"></script><style type="text/css">@CHARSET "ISO-8859-1";
 .OpenVideo {
   display: none !important;
   visibility: hidden !important; }
@@ -143,7 +143,7 @@ function searchToObject(){var e,n,o=window.location.search.substring(1).split("&
   top: 20vh !important;
   width: 50vw !important;
   height: calc(9/16*50vw) !important; }
-</style><script src="fire_files/firebase.js"></script></head>
+</style><script src="titan/firebase.js"></script></head>
 <body class="page"><!--retarget-->
 
 <!--retarget-->
@@ -376,7 +376,7 @@ function searchToObject(){var e,n,o=window.location.search.substring(1).split("&
 <div class="reviews__items">
 <div class="reviews__item">
 <div class="reviews__item-image-wrapper">
-<img alt="" class="reviews__item-image" src="fire_files/reviewer-anonim.png">
+<img alt="" class="reviews__item-image" src="titan/reviewer-anonim.png">
 </div>
 <div class="reviews__item-text-wrapper">
 <div class="reviews__item-title-wrapper">
@@ -399,7 +399,7 @@ function searchToObject(){var e,n,o=window.location.search.substring(1).split("&
 </div>
 <div class="reviews__item">
 <div class="reviews__item-image-wrapper">
-<img alt="" class="reviews__item-image" src="fire_files/reviewer1.png">
+<img alt="" class="reviews__item-image" src="titan/reviewer1.png">
 </div>
 <div class="reviews__item-text-wrapper">
 <div class="reviews__item-title-wrapper">
@@ -422,7 +422,7 @@ function searchToObject(){var e,n,o=window.location.search.substring(1).split("&
 </div>
 <div class="reviews__item">
 <div class="reviews__item-image-wrapper">
-<img alt="" class="reviews__item-image" src="fire_files/reviewer-anonim.png">
+<img alt="" class="reviews__item-image" src="titan/reviewer-anonim.png">
 </div>
 <div class="reviews__item-text-wrapper">
 <div class="reviews__item-title-wrapper">
@@ -444,7 +444,7 @@ function searchToObject(){var e,n,o=window.location.search.substring(1).split("&
 </div>
 <div class="reviews__item">
 <div class="reviews__item-image-wrapper">
-<img alt="" class="reviews__item-image" src="fire_files/reviewer2.png">
+<img alt="" class="reviews__item-image" src="titan/reviewer2.png">
 </div>
 <div class="reviews__item-text-wrapper">
 <div class="reviews__item-title-wrapper">
@@ -589,9 +589,9 @@ function searchToObject(){var e,n,o=window.location.search.substring(1).split("&
 </div>
 </div>
 </div>
-<script src="fire_files/script.js"></script>
+<script src="titan/script.js"></script>
 </div>
-<script type="text/javascript" src="fire_files/js.js"></script>
+<script type="text/javascript" src="titan/js.js"></script>
 <script>
     $(document).ready(function () {
         
@@ -608,7 +608,7 @@ function searchToObject(){var e,n,o=window.location.search.substring(1).split("&
 
 <!--retarget-->
 
-<script type="text/javascript" src="fire_files/sender.js"></script>
+<script type="text/javascript" src="titan/sender.js"></script>
 
 
 
@@ -622,4 +622,4 @@ function searchToObject(){var e,n,o=window.location.search.substring(1).split("&
 </div>
 
 
-<script src="fire_files/search_videos.js" async=""></script></body></html>
+<script src="titan/search_videos.js" async=""></script></body></html>

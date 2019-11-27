@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class landingController extends Controller
 {
     public function landing(){
-        return view('landing');
+        return view('titan.landing');
     }
 }
