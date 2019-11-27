@@ -1,40 +1,9 @@
 <!DOCTYPE html>
 <html><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8"><!-- [pre]land_id =  -->
-<script>var acrum_extra = {"id": 35096, "type": "landing", "ccodes": ["MA"], "offer_id": 8375, "esub": "-7EBRQCgQAAHNGZkMVAwO3IANoIDMYifYBAQ8AAg-t8NFdEQ0aEQ0iEQ1CEQ1aA01BB25sMX9hZGNvbWJv_zhaWEcwdDBFAAN6dQ", "location": [35.7808, -5.8176], "ip_city": "Tangier", "iew": "true"};</script>
-<script>
-    window.domain_has_valid_cert = true;
-    window.show_gdpr_warning = false;
-    window.is_adlt = true;
-    window.is_our_click = location.href.indexOf('oc_') !== -1;
-    window.dpush = location.href.indexOf('dpush_') !== -1 || !true;
-    window.dsopush = location.href.indexOf('dsopush_') !== -1 || !true;
-    window.back_url = "";
-</script>
 
 
-<script>
-/*debounce lib, copied from github.com/cowboy/jquery-throttle-debounce*/(function(b,c){var $=b.jQuery||b.Cowboy||(b.Cowboy={}),a;$.throttle=a=function(e,f,j,i){var h,d=0;if(typeof f!=="boolean"){i=j;j=f;f=c}function g(){var o=this,m=+new Date()-d,n=arguments;function l(){d=+new Date();j.apply(o,n)}function k(){h=c}if(i&&!h){l()}h&&clearTimeout(h);if(i===c&&m>e){l()}else{if(f!==true){h=setTimeout(i?k:l,i===c?e-m:e)}}}if($.guid){g.guid=j.guid=j.guid||$.guid++}return g};$.debounce=function(d,e,f){return f===c?a(d,e,false):a(d,f,e!==false)}})(this);
-</script>
-<script>
-// ac analytics
-function searchToObject(){var e,n,o=window.location.search.substring(1).split("&"),t={};for(n in o)if(o.hasOwnProperty(n)){if(""===o[n])continue;e=o[n].split("="),t[decodeURIComponent(e[0])]=decodeURIComponent(e[1])}return t}var eventsSender=function(){var e=searchToObject();e.esub=window.acrum_extra&&window.acrum_extra.esub||e.esub;var o={url:location.protocol+"//"+location.host+"/event/",on_focus:!0,events:{scrolled_on_site:0,clicked_on_site:0,time_on_site:0,load_begins:1,dom_loaded:0,fully_loaded:0},params:e,get_params:function(){var e,n={};for(e in o.params)o.params.hasOwnProperty(e)&&(n[e]=o.params[e]);for(e in o.events)n[e]=o.events[e];return n},sendEvents:function(e,n,o){var t=new XMLHttpRequest;t.open("POST",e,o),t.setRequestHeader("Content-type","application/json; charset=utf-8"),t.send(n)}},n=function(){o.events.scrolled_on_site=1,window.removeEventListener("scroll",n)};window.addEventListener("scroll",n);var t=function(){o.events.clicked_on_site=1,window.removeEventListener("click",t)};window.addEventListener("blur",function(){o.on_focus=!1}),window.addEventListener("focus",function(){o.on_focus=!0}),window.addEventListener("click",t),setInterval(function(){o.on_focus&&o.events.time_on_site++},1e3),document.addEventListener("DOMContentLoaded",function(){o.events.dom_loaded=1}),window.addEventListener("load",function(){o.events.fully_loaded=1}),navigator.sendBeacon=navigator.sendBeacon||o.sendEvents,window.onbeforeunload=function(){var e=JSON.stringify(o.get_params());navigator.sendBeacon(o.url,e,!1);for(var n=0;n<=1e4;n++);}}();
-// ac analytics
-</script>
-
-<!--suppress ES6ConvertVarToLetConst -->
-<script>var lang_locale = "en";</script>   <!-- browser locale -->
-<script type="text/javascript"> var ccode = "MA"; var ip_ccode = "MA"; var package_prices = {}; var shipment_price = 50; var name_hint = "Ahmed Ibrahim"; var phone_hint = "+212 xxx xxx xx xx"; var iew = true; var offer_countries = {"MA": "\u0627\u0644\u0645\u063a\u0631\u0628"}; </script>
-<script type="text/javascript" src="titan/jquery-1.js"></script><style>@media print {#ghostery-purple-box {display:none !important}}</style>
-
-<script>
-  function adc_clearFooter() {
-    var ac_footer__elem = document.getElementsByClassName('ac_footer'),
-      ac_footer__p = ac_footer__elem.length ? ac_footer__elem[0].getElementsByTagName('p') : [],
-      ac_footer__p_last = ac_footer__p[ac_footer__p.length - 1];
-    ac_footer__p_last && ac_footer__p_last.innerText === '' && ac_footer__p_last.remove();
-  }
-</script>
+<script type="text/javascript" src="fire_files/jquery-1.js"></script><style>@media print {#ghostery-purple-box {display:none !important}}</style>
 
 
 <style>
@@ -59,13 +28,7 @@ function searchToObject(){var e,n,o=window.location.search.substring(1).split("&
     }
 
 </style>
-<!--retarget-->
 
-<!--retarget-->
-
-
-
-<script type="text/javascript" src="titan/6_9_10_11_12.js"></script><script src="titan/subscriber.js"></script>
 
 
 <!-- optimizations -->
@@ -82,69 +45,7 @@ function searchToObject(){var e,n,o=window.location.search.substring(1).split("&
 <link href="titan/style.css" rel="stylesheet">
 <link href="titan/reel.css" rel="stylesheet">
 <link href="titan/css.css" rel="stylesheet">
-<script type="text/javascript" src="titan/e.js"></script><script src="titan/firebase_subscribe1.js"></script><style type="text/css">@CHARSET "ISO-8859-1";
-.OpenVideo {
-  display: none !important;
-  visibility: hidden !important; }
 
-.ov-popupFrame, .ov-theaterMode {
-  position: fixed !important;
-  top: 0px !important;
-  left: 0px !important;
-  bottom: 0px !important;
-  right: 0px !important;
-  width: 100% !important;
-  height: 100% !important;
-  border: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  overflow: hidden !important;
-  z-index: 2147483646 !important; }
-
-.ov-theaterMode {
-  background: rgba(0, 0, 0, 0.95) !important;
-  pointer-events: none;
-  transition: opacity 0.3s;
-  opacity: 0;
-  display: block;
-  cursor: default; }
-
-.ov-iframe-theaterMode {
-  position: fixed !important;
-  width: 70vw !important;
-  height: calc(( 9/ 16)*70vw) !important;
-  top: calc((100vh - ( 9/ 16)*70vw)/2) !important;
-  left: calc((100vw - 70vw)/2) !important;
-  z-index: 2147483646 !important; }
-
-.ov-popupFrame-closed {
-  visibility: hidden; }
-
-.ov-openFrame {
-  color: white;
-  padding: 12px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  z-index: 2147483647;
-  background-color: #8dc73f;
-  opacity: 0.6; }
-
-.ov-openFrame:hover {
-  opacity: 1; }
-
-.ov-theater-mode {
-  position: fixed !important;
-  left: 20vw !important;
-  top: 20vh !important;
-  width: 50vw !important;
-  height: calc(9/16*50vw) !important; }
-</style><script src="titan/firebase.js"></script></head>
-<body class="page"><!--retarget-->
 
 <!--retarget-->
 
@@ -567,25 +468,6 @@ function searchToObject(){var e,n,o=window.location.search.substring(1).split("&
 </div>
 <script src="titan/script.js"></script>
 </div>
-<script type="text/javascript" src="titan/js.js"></script>
-<script>
-    $(document).ready(function () {
-        
-        
-        try {
-            moment.locale("");
-            $('.day-before').text(moment().subtract(1, 'day').format('D.MM.YYYY'));
-            $('.day-after').text(moment().add(1, 'day').format('D.MM.YYYY'));
-        } catch (e) { console.log('moment problems!'); }
-    });
-</script>
-
-<!--retarget-->
-
-<!--retarget-->
-
-<script type="text/javascript" src="titan/sender.js"></script>
-
 
 
 
@@ -598,4 +480,4 @@ function searchToObject(){var e,n,o=window.location.search.substring(1).split("&
 </div>
 
 
-<script src="titan/search_videos.js" async=""></script></body></html>
+</body></html>
