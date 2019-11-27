@@ -13,7 +13,11 @@ class AddTrackingToCostumer extends Migration
      */
     public function up()
     {
-        //
+        Schema::table('costumers', function($table) {
+            $table->string('tracking')->default("-");
+            $table->double('price')->default("449");
+
+        });
     }
 
     /**
@@ -23,6 +27,10 @@ class AddTrackingToCostumer extends Migration
      */
     public function down()
     {
-        //
+        Schema::table('costumers', function($table) {
+            $table->dropColumn('tracking');
+            $table->dropColumn('price');
+
+        });
     }
 }
