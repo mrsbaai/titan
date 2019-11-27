@@ -15,7 +15,7 @@ class Fix2Costumers extends Migration
     {
         Schema::table('costumers', function($table) {
             $table->string('phone')->unique()->default("No_Phone");
-            $table->string('email')->unique()->default("No_Email");
+       
 
         });
     }
@@ -28,7 +28,7 @@ class Fix2Costumers extends Migration
     public function down()
     {
         Schema::table('costumers', function($table) {
-            $table->dropColumn('email');
+     
             $table->dropColumn('phone');
 
         });

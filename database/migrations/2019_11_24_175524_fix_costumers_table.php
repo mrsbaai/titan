@@ -14,7 +14,7 @@ class FixCostumersTable extends Migration
     public function up()
     {
         Schema::table('costumers', function($table) {
-            $table->dropColumn('email');
+
             $table->dropColumn('phone');
 
         });
@@ -29,7 +29,7 @@ class FixCostumersTable extends Migration
     {
         Schema::table('costumers', function($table) {
             $table->string('phone')->nullable();
-            $table->string('email')->unique();
+  
         });
     }
 }

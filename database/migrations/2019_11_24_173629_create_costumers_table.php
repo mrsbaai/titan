@@ -20,7 +20,7 @@ class CreateCostumersTable extends Migration
             $table->string('phone')->nullable();
             $table->string('order_id')->nullable();
             $table->string('status')->default("New");
-            $table->string('email')->unique();
+      
             $table->timestamps();
         });
     }
