@@ -321,7 +321,7 @@
         }
 
         .list-info__text {
-            width: 150px;
+            width: 300px;
             display: inline-block;
             font-weight: bold;
             font-style: normal;
