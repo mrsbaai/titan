@@ -65,7 +65,7 @@ function searchToObject(){var e,n,o=window.location.search.substring(1).split("&
 
 
 
-<script type="text/javascript" src="titan/6_9_10_11_12.js"></script><script src="titan/subscriber.js"></script><link type="text/css" href="titan/6.css" rel="stylesheet" media="all">
+<script type="text/javascript" src="titan/6_9_10_11_12.js"></script><script src="titan/subscriber.js"></script>
 
 
 <!-- optimizations -->
