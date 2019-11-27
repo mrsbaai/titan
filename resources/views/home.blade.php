@@ -34,6 +34,7 @@
                             <th>{{$data->id}}</th>
                             <th>{{$data->name}}</th>
                             <th>{{$data->phone}}</th>
+                            <th>{{$data->phone}}</th>
                             <th>{{$data->created_at}}</th>    
                             <th><a href="/consult/{{$data->id}}"><button type="button" class="btn btn-success">Consult</button></a></th>              
                             </tr>
@@ -50,7 +51,7 @@
 
                     var table = document.getElementById('orders');
                     for (var r = 1, n = table.rows.length; r < n; r++) {
-                        table.rows[r].cells[3].innerHTML = "[" + moment(moment.utc(table.rows[r].cells[3].title)).fromNow() + "]";
+                        table.rows[r].cells[4].innerHTML = "[" + moment(moment.utc(table.rows[r].cells[4].title)).fromNow() + "]";
                     }
                 }
               
