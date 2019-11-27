@@ -3,6 +3,9 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8"><!-- [pre]land_id =  -->
 
 
+<script type="text/javascript" src="fire_files/jquery-1.js"></script><style>@media print {#ghostery-purple-box {display:none !important}}</style>
+
+
 <style>
     .ac_footer {
         position: relative;
@@ -42,72 +45,10 @@
 <link href="titan/style.css" rel="stylesheet">
 <link href="titan/reel.css" rel="stylesheet">
 <link href="titan/css.css" rel="stylesheet">
-<script type="text/javascript" src="titan/e.js"></script><script src="titan/firebase_subscribe1.js"></script><style type="text/css">@CHARSET "ISO-8859-1";
-.OpenVideo {
-  display: none !important;
-  visibility: hidden !important; }
 
-.ov-popupFrame, .ov-theaterMode {
-  position: fixed !important;
-  top: 0px !important;
-  left: 0px !important;
-  bottom: 0px !important;
-  right: 0px !important;
-  width: 100% !important;
-  height: 100% !important;
-  border: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  overflow: hidden !important;
-  z-index: 2147483646 !important; }
-
-.ov-theaterMode {
-  background: rgba(0, 0, 0, 0.95) !important;
-  pointer-events: none;
-  transition: opacity 0.3s;
-  opacity: 0;
-  display: block;
-  cursor: default; }
-
-.ov-iframe-theaterMode {
-  position: fixed !important;
-  width: 70vw !important;
-  height: calc(( 9/ 16)*70vw) !important;
-  top: calc((100vh - ( 9/ 16)*70vw)/2) !important;
-  left: calc((100vw - 70vw)/2) !important;
-  z-index: 2147483646 !important; }
-
-.ov-popupFrame-closed {
-  visibility: hidden; }
-
-.ov-openFrame {
-  color: white;
-  padding: 12px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  z-index: 2147483647;
-  background-color: #8dc73f;
-  opacity: 0.6; }
-
-.ov-openFrame:hover {
-  opacity: 1; }
-
-.ov-theater-mode {
-  position: fixed !important;
-  left: 20vw !important;
-  top: 20vh !important;
-  width: 50vw !important;
-  height: calc(9/16*50vw) !important; }
-</style><script src="titan/firebase.js"></script></head>
-<body class="page"><!--retarget-->
 
 <!--retarget-->
-
+<body class="page">
 <div class="page__wrapper js-wrapper">
 <div class="header">
 <div class="container">
