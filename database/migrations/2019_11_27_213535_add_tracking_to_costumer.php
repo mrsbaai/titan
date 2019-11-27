@@ -6,16 +6,12 @@ use Illuminate\Database\Migrations\Migration;
 
 class AddTrackingToCostumer extends Migration
 {
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
+    
     public function up()
     {
         Schema::table('costumers', function($table) {
             $table->string('tracking')->default("-");
-            $table->double('price')->default("449");
+            $table->double('tprice')->default("449");
 
         });
     }
@@ -29,7 +25,7 @@ class AddTrackingToCostumer extends Migration
     {
         Schema::table('costumers', function($table) {
             $table->dropColumn('tracking');
-            $table->dropColumn('price');
+            $table->dropColumn('tprice');
 
         });
     }

@@ -21,7 +21,7 @@ class landingController extends Controller
         $costumer->name = request('name');
         $costumer->age = request('age');
         $costumer->phone = request('phone');
-        $costumer->price = "449";
+        $costumer->tprice = "449";
  
         $costumer->save();
 
