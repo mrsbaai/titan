@@ -465,13 +465,13 @@
             <div class="list-info">
                 <ul class="list-info__list">
                     <li class="list-info__item" style="font-size:150%">
-                        <span class="list-info__text">:الاسم</span>
+                        <span class="list-info__text">             :الاسم</span>
                         {{$name}}
                        
                         
                     </li>
                     <li class="list-info__item" style="font-size:150%">
-                        <span class="list-info__text">:الهاتف</span>
+                        <span class="list-info__text">             :الهاتف</span>
                         {{$phone}}
                         
                        

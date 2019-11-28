@@ -14,7 +14,7 @@ class AddAgeToCostumers extends Migration
     public function up()
     {
         Schema::table('costumers', function($table) {
-            $table->double('age')->default("0");
+            $table->double('age')->nullable()->default("0");
 
         });
     }
