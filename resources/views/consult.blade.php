@@ -16,44 +16,43 @@
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="inputName">Full Name</label>
-                        <input type="text" class="form-control" id="inputName" placeholder="">
+                        <input type="text" class="form-control" id="inputName" placeholder="" value="{{$ret->name}}">
                     </div>
                 
 
                     <div class="form-group col-md-4">
                         <label for="inputNumber">Pone Number</label>
-                        <input type="text" class="form-control" id="inputNumber" placeholder="">
+                        <input type="text" class="form-control" id="inputNumber" placeholder="" value="{{$ret->phone}}">
                     </div>
 
                     <div class="form-group col-md-2">
                         <label for="inputAge">Age</label>
-                        <input type="text" class="form-control" id="inputAge" placeholder="">
+                        <input type="text" class="form-control" id="inputAge" placeholder="" value="{{$ret->age}}">
                     </div>
                 </div>
 
-                
-                <div class="form-group">
-                    <label for="inputPrice">Price (Dirhams) (With shipping)</label>
-                    <input type="text" class="form-control" id="inputPrice" placeholder="">
-                </div>
-        
-
                 <div class="form-group">
                     <label for="inputAddress">Address</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="">
+                    <input type="text" class="form-control" id="inputAddress" placeholder="" value="{{$ret->address}}">
                 </div>
 
-                <div class="form-group">
-                    <label for="inputAddress2">Address 2</label>
-                    <input type="text" class="form-control" id="inputAddress2" placeholder="">
-                </div>
+     
                 <div class="form-row">
 
                     <div class="form-group col-md-6">
                     <label for="inputRegion">Region</label>
                     <select id="inputRegion" class="form-control">
                         <option selected>Choose...</option>
-                        <option>...</option>
+                        <option>AGADIR</option>
+                        <option>CASABLANCA</option>
+                        <option>FES</option>
+                        <option>LAAYOUNE</option>
+                        <option>MARRAKECH</option>
+                        <option>MEKNES</option>
+                        <option>OUJDA</option>
+                        <option>RABAT</option>
+                        <option>SETTAT</option>
+                        <option>TANGER</option>
                     </select>
                     </div>
 
@@ -81,8 +80,8 @@
 
                     <div class="form-group col-md-6">
                  
-                        <label for="inputPrice">Price (Mad)</label>
-                        <input type="text" class="form-control" id="inputPrice" placeholder="">
+                        <label for="inputPrice">Price (Dirhams) (With shipping)</label>
+                        <input type="text" class="form-control" id="inputPrice" placeholder="" value="{{$ret->price}}">
         
                     </div>
                     
@@ -92,7 +91,7 @@
                             <label for="inputStatus">Status</label>
                             <select id="inputStatus" class="form-control">
                                 <option selected>New</option>
-                                <option>Needs Shiping</option>
+                                <option>Needs Shipping</option>
                                 <option>Shipped</option>
                                 <option>Completed</option>
                             </select>
@@ -101,21 +100,30 @@
                     </div>
                 </div>
 
+                <div class="form-group">
+                            <label for="inputShipping">Shipping Type</label>
+                            <select id="inputShipping" class="form-control">
+                                <option selected>Poste</option>
+                                <option>Home</option>
+                            </select>
+                        </div>
+
+                <div class="form-group">
+                    <label for="inputAddress2">Tracking Code</label>
+                    <input type="text" class="form-control" id="inputAddress2" value="{{$ret->tracking}}" placeholder="">
+                </div>
+
                 <div class="form-row">
-                    <div class="form-group col-md-3">
-                    <button type="submit" class="btn btn-success">Update</button>
-                    </div>
+                    <div class="form-group col-md-6">
+                    <button type="submit" class="btn btn-lg btn-success">Update</button>
 
-                    
-
-                    <div class="form-group col-md-3">
-                    <a href="/2/cancel"><button class="btn btn-danger">Cancel</button></a>
+                    <a href="/2/cancel"><button class="btn btn-lg btn-danger">Delete</button></a>
                     </div>
 
 
 
                     <div class="form-group col-md-6 text-right">
-                    <a href="/1/next"><button class="btn btn-primary">Next</button></a>
+                    <a href="/1/next"><button class="btn btn-lg btn-gray">Next</button></a>
                     </div>
 
                 </div>
