@@ -120,9 +120,9 @@
 <div class="container">
 <div class="s-increase__title">
 <div class="s-increase__title-inner">
-<div class="s-increase__title-top">زيادة</div>
+<div class="s-increase__title-top"></div>
 <div class="s-increase__title-bottom">
-<span>فعلية</span> تصل إلى
+<span>زيادة فعلية</span> تصل إلى
                 <span>%40</span>
 </div>
 </div>
