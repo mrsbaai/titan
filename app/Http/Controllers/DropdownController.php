@@ -15,7 +15,6 @@ class DropdownController extends Controller
             $cities = DB::table("poste")
             ->where("REGION",$request->region_id)
             ->groupBy('VILLECOMMUNE')
-            ->having('count', '>', 1)
             ->pluck("VILLECOMMUNE","VILLECOMMUNE");
             return response()->json($cities);
         }
@@ -25,7 +24,6 @@ class DropdownController extends Controller
             $postes = DB::table("poste")
             ->where("VILLECOMMUNE",$request->city_id)
             ->groupBy('VILLECOMMUNE')
-            ->having('count', '>', 1)
             ->pluck("ADRESSE","ADRESSE");
             return response()->json($postes);
         }
