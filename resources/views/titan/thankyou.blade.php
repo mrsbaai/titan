@@ -321,7 +321,8 @@
         }
 
         .list-info__text {
-            width: 300px;
+           
+            float:right;
             display: inline-block;
             font-weight: bold;
             font-style: normal;
@@ -454,21 +455,21 @@
    
 <div class="mod success-page">
     <div class="container">
-        <h2 class="success-page__title" style="font-size:300%">!شكرا لطلبك هذا المنتج</h2>
+        <h2 class="success-page__title" style="font-size:200%">!شكرا لطلبك هذا المنتج</h2>
 
         
-            <p class="success-page__message_success" style="font-size:200%">.سنقوم بالرد على طلبك قريبًا، المرجو الاحتفاظ بهاتفك على وضع التشغيل</p>
+            <p class="success-page__message_success" style="font-size:150%">سنقوم بالرد على طلبك قريبًا، المرجو الاحتفاظ بهاتفك على وضع التشغيل</p>
 
-            <h3 class="success-page__text" style="font-size:300%">:يرجى التحقق من معلومات الاتصال الخاصة بك</h3>
+            <h3 class="success-page__text" style="font-size:300%">يرجى التحقق من معلومات الاتصال الخاصة بك</h3>
 
             <div class="list-info">
                 <ul class="list-info__list">
-                    <li class="list-info__item" style="font-size:200%">
+                    <li class="list-info__item" style="font-size:150%">
                         <span class="list-info__text">{{$name}}</span>
                         :الاسم
                         
                     </li>
-                    <li class="list-info__item" style="font-size:200%">
+                    <li class="list-info__item" style="font-size:150%">
                         <span class="list-info__text">{{$phone}}</span>
                         :رقم الهاتف
                        
@@ -477,8 +478,8 @@
             </div>
 
             <p class="success-page__message_fail">
-                <a class="success-page__message_fail__link" href="javascript:history.back()" style="font-size:300%">
-                   .إذا قمت بخطأ ما ، فعليك العودة وملء النموذج مرة أخرى
+                <a class="success-page__message_fail__link" href="javascript:history.back()" style="font-size:200%">
+                   إذا قمت بخطأ ما، فعليك العودة وملء النموذج مرة أخرى
                 </a>
             </p>
             
