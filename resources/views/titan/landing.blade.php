@@ -269,9 +269,9 @@
 <div class="container">
 <div class="s-reviews__title-wrapper">
 <div class="s-reviews__title">
-<div class="s-reviews__title-top">أشخاص جرّبوا</div>
+<div class="s-reviews__title-top"></div>
 <div class="s-reviews__title-bottom">
-<span>Titan Gel</span> بالفعل!
+أشخاص جرّبوا <span>Titan Gel</span> بالفعل!
               </div>
 </div>
 </div>
