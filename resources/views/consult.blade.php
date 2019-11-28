@@ -170,5 +170,30 @@ $(document).on('change', '#inputRegion', function() {
     } 
     
    });
+
+   $(document).on('change', '#inputCity', function() {
+    var cityID = $(this).val();    
+    if(cityID){
+        $.ajax({
+           type:"GET",
+           url:"{{url('get-poste-list')}}?city_id="+cityID,
+           success:function(res){               
+            if(res){
+                $("#inputPoste").empty();
+                $.each(res,function(key,value){
+                    $("#inputPoste").append('<option value="'+key+'">'+value+'</option>');
+                });
+           
+            }else{
+               $("#inputPoste").empty();
+            }
+           }
+        });
+    }else{
+        $("#inputPoste").empty();
+    }
+        
+   });
+
 </script>
 @endsection
