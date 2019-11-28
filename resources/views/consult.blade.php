@@ -41,27 +41,25 @@
 
                     <div class="form-group col-md-6">
                     <label for="inputRegion">Region</label>
-                    <select id="inputRegion" class="form-control">
-                        <option selected>Choose...</option>
-                        <option>AGADIR</option>
-                        <option>CASABLANCA</option>
-                        <option>FES</option>
-                        <option>LAAYOUNE</option>
-                        <option>MARRAKECH</option>
-                        <option>MEKNES</option>
-                        <option>OUJDA</option>
-                        <option>RABAT</option>
-                        <option>SETTAT</option>
-                        <option>TANGER</option>
+                    <select id="inputRegion" name="inputRegion" class="form-control">
+                        <option value="" selected disabled>Select</option>
+                        <option value="AGADIR">AGADIR</option>
+                        <option value="CASABLANCA">CASABLANCA</option>
+                        <option value="FES">FES</option>
+                        <option value="LAAYOUNE">LAAYOUNE</option>
+                        <option value="MARRAKECH">MARRAKECH</option>
+                        <option value="MEKNES">MEKNES</option>
+                        <option value="OUJDA">OUJDA</option>
+                        <option value="RABAT">RABAT</option>
+                        <option value="SETTAT">SETTAT</option>
+                        <option value="TANGER">TANGER</option>
                     </select>
                     </div>
 
-                    
+
                     <div class="form-group col-md-6">
                     <label for="inputCity">City</label>
-                    <select id="inputCity" class="form-control">
-                        <option selected>Choose...</option>
-                        <option>...</option>
+                    <select id="inputCity" name="inputCity" class="form-control">
                     </select>
                     </div>
 
@@ -70,9 +68,7 @@
 
                 <div class="form-group">
                     <label for="inputPoste">Poste</label>
-                    <select id="inputPoste" class="form-control">
-                        <option selected>Choose...</option>
-                        <option>...</option>
+                    <select id="inputPoste" name="inputPoste" class="form-control">
                     </select>
                 </div>
 
@@ -146,27 +142,50 @@
 
 
 <script type="text/javascript">
-
-    $('#state').on('change',function(){
-    var stateID = $(this).val();    
-    if(stateID){
+    $('#inputRegion').change(function(){
+    var regionID = $(this).val();    
+    if(regionID){
         $.ajax({
            type:"GET",
-           url:"{{url('get-city-list')}}?state_id="+stateID,
+           url:"{{url('get-city-list')}}?region_id="+regionID,
            success:function(res){               
             if(res){
-                $("#city").empty();
+                $("#inputCity").empty();
+                $("#inputCity").append('<option>Select</option>');
                 $.each(res,function(key,value){
-                    $("#city").append('<option value="'+key+'">'+value+'</option>');
+                    $("#inputCity").append('<option value="'+key+'">'+value+'</option>');
                 });
            
             }else{
-               $("#city").empty();
+               $("#inputCity").empty();
             }
            }
         });
     }else{
-        $("#city").empty();
+        $("#inputCity").empty();
+        $("#inputPoste").empty();
+    }      
+   });
+    $('#inputCity').on('change',function(){
+    var cityID = $(this).val();    
+    if(cityID){
+        $.ajax({
+           type:"GET",
+           url:"{{url('get-poste-list')}}?city_id="+cityID,
+           success:function(res){               
+            if(res){
+                $("#inputPoste").empty();
+                $.each(res,function(key,value){
+                    $("#inputPoste").append('<option value="'+key+'">'+value+'</option>');
+                });
+           
+            }else{
+               $("#inputPoste").empty();
+            }
+           }
+        });
+    }else{
+        $("#inputPoste").empty();
     }
         
    });

@@ -26,7 +26,5 @@ Route::post('/consult', 'HomeController@updateCostumer');
 Route::post('/consult', 'HomeController@updateCostumer');
 
 
-
-Route::get('dropdownlist','DropdownController@index');
-Route::get('get-state-list','DropdownController@getStateList');
+Route::get('get-poste-list','DropdownController@getPosteList');
 Route::get('get-city-list','DropdownController@getCityList');
