@@ -142,11 +142,9 @@
 
 
 <script type="text/javascript">
-                $(document).ready(function(){         
-                
-                
-  alert("0");
+$('#inputRegion').change(function(){
+        alert("1");
     
-});
+   });
 </script>
 @endsection
