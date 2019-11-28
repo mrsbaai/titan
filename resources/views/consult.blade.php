@@ -81,7 +81,7 @@
                     <div class="form-group col-md-6">
                  
                         <label for="inputPrice">Price (Dirhams) (With shipping)</label>
-                        <input type="text" class="form-control" id="inputPrice" placeholder="" value="{{$ret->price}}">
+                        <input type="text" class="form-control" id="inputPrice" placeholder="" value="{{$ret->tprice}}">
         
                     </div>
                     
@@ -117,7 +117,7 @@
                     <div class="form-group col-md-6">
                     <button type="submit" class="btn btn-lg btn-success">Update</button>
 
-                    <a href="/2/cancel"><button class="btn btn-lg btn-danger">Delete</button></a>
+                    <a href="/2/delete"><button class="btn btn-lg btn-danger">Delete</button></a>
                     </div>
 
 
