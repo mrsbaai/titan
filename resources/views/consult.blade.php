@@ -142,7 +142,8 @@
 
 
 <script type="text/javascript">
-$('#inputRegion').change(function(){
+$(document).on('change', '#inputRegion', function() {
+
         alert("1");
     
    });
