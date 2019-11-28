@@ -144,7 +144,32 @@
 <script type="text/javascript">
 $(document).on('change', '#inputRegion', function() {
 
-        alert("1");
+    alert("1");
+    var regionID = $(this).val();    
+    if(regionID){
+        alert("2");
+        $.ajax({
+           type:"GET",
+           url:"{{url('get-city-list')}}?region_id="+regionID,
+           alert("3");
+           success:function(res){               
+            if(res){
+                alert("4");
+                $("#inputCity").empty();
+                $("#inputCity").append('<option>Select</option>');
+                $.each(res,function(key,value){
+                    $("#inputCity").append('<option value="'+key+'">'+value+'</option>');
+                });
+           
+            }else{
+               $("#inputCity").empty();
+            }
+           }
+        });
+    }else{
+        $("#inputCity").empty();
+        $("#inputPoste").empty();
+    } 
     
    });
 </script>
