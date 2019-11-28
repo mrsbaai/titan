@@ -23,7 +23,6 @@ class DropdownController extends Controller
         {
             $postes = DB::table("poste")
             ->where("VILLECOMMUNE",$request->city_id)
-            ->groupBy('VILLECOMMUNE')
             ->pluck("ADRESSE","ADRESSE");
             return response()->json($postes);
         }
