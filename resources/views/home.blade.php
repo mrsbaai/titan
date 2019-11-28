@@ -43,8 +43,7 @@
                         </tbody>
                     </table>
             <script type="text/javascript">
-                $(document).ready(function(){
-          
+                $(document).ready(function(){         
                     refreshTable();
                 });
 

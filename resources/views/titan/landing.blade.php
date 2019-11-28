@@ -380,8 +380,8 @@
 <div class="footer__inner">
 <div class="footer__title">
 <div class="footer__title-top">
-<div class="footer__title-top-left">امنحها</div>
-<div class="footer__title-top-right">الشعور والإثارة</div>
+<div class="footer__title-top-left">الشعور والإثارة</div>
+<div class="footer__title-top-right">امنحها</div>
 </div>
 <div class="footer__title-bottom">التي تستحقها</div>
 </div>
