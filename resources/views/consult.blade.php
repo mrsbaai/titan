@@ -142,7 +142,9 @@
 
 
 <script type="text/javascript">
-    $('#inputRegion').change(function(){
+  alert("0");
+  $(document).on('change', '#inputRegion', function() {
+
         alert("1");
     var regionID = $(this).val();    
     if(regionID){
@@ -170,7 +172,8 @@
         $("#inputPoste").empty();
     }      
    });
-    $('#inputCity').on('change',function(){
+   $(document).on('change', '#inputCity', function() {
+
     var cityID = $(this).val();    
     if(cityID){
         $.ajax({
