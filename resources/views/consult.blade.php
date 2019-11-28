@@ -146,57 +146,7 @@
                 
                 
   alert("0");
-    $('#inputRegion').change(function(){
-        alert("1");
-    var regionID = $(this).val();    
-    if(regionID){
-        alert("2");
-        $.ajax({
-           type:"GET",
-           url:"{{url('get-city-list')}}?region_id="+regionID,
-           alert("3");
-           success:function(res){               
-            if(res){
-                alert("4");
-                $("#inputCity").empty();
-                $("#inputCity").append('<option>Select</option>');
-                $.each(res,function(key,value){
-                    $("#inputCity").append('<option value="'+key+'">'+value+'</option>');
-                });
-           
-            }else{
-               $("#inputCity").empty();
-            }
-           }
-        });
-    }else{
-        $("#inputCity").empty();
-        $("#inputPoste").empty();
-    }      
-   });
-    $('#inputCity').on('change',function(){
-    var cityID = $(this).val();    
-    if(cityID){
-        $.ajax({
-           type:"GET",
-           url:"{{url('get-poste-list')}}?city_id="+cityID,
-           success:function(res){               
-            if(res){
-                $("#inputPoste").empty();
-                $.each(res,function(key,value){
-                    $("#inputPoste").append('<option value="'+key+'">'+value+'</option>');
-                });
-           
-            }else{
-               $("#inputPoste").empty();
-            }
-           }
-        });
-    }else{
-        $("#inputPoste").empty();
-    }
-        
-   });
+    
 });
 </script>
 @endsection
