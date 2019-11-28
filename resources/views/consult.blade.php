@@ -142,9 +142,11 @@
 
 
 <script type="text/javascript">
+                $(document).ready(function(){         
+                
+                
   alert("0");
-  $(document).on('change', '#inputRegion', function() {
-
+    $('#inputRegion').change(function(){
         alert("1");
     var regionID = $(this).val();    
     if(regionID){
@@ -172,8 +174,7 @@
         $("#inputPoste").empty();
     }      
    });
-   $(document).on('change', '#inputCity', function() {
-
+    $('#inputCity').on('change',function(){
     var cityID = $(this).val();    
     if(cityID){
         $.ajax({
@@ -196,5 +197,6 @@
     }
         
    });
+});
 </script>
 @endsection
