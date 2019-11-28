@@ -471,7 +471,7 @@
                         
                     </li>
                     <li class="list-info__item" style="font-size:150%">
-                        <span class="list-info__text">:رقم الهاتف</span>
+                        <span class="list-info__text">:الهاتف</span>
                         {{$phone}}
                         
                        
