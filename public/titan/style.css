@@ -2934,7 +2934,7 @@ table {
   .compare-item_before:before,
   .compare__items:before,
   .experts__item-image-wrapper {
-    background-image: url(retina-m2x.png);
+    background-image: url(retina-m-2x.png);
     -webkit-background-size: 396px 298px;
     background-size: 396px 298px
   }
@@ -3110,7 +3110,7 @@ table {
   .increase-advantages__item-icon_length,
   .increase-advantages__item-icon_width,
   .s-before-after__item-title-value_after {
-    background-image: url(retina2x.png);
+    background-image: url(retina-2x.png);
     -webkit-background-size: 870px 805px;
     background-size: 870px 805px
   }
