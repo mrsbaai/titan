@@ -460,7 +460,7 @@
         
             <p class="success-page__message_success" style="font-size:150%">سنقوم بالرد على طلبك قريبًا، المرجو الاحتفاظ بهاتفك على وضع التشغيل</p>
 
-            <h3 class="success-page__text" style="font-size:300%">يرجى التحقق من معلومات الاتصال الخاصة بك</h3>
+            <h3 class="success-page__text" style="font-size:200%">يرجى التحقق من معلومات الاتصال الخاصة بك</h3>
 
             <div class="list-info">
                 <ul class="list-info__list">
