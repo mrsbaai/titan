@@ -91,15 +91,19 @@
                 </div>
 
                 <div class="form-row">
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-6 ">
+                    <a href="./1"><button class="btn btn-lg btn-gray">< Previous</button></a>
+                    <a href="./1"><button class="btn btn-lg btn-gray">Next ></button></a>
+                    </div>
+
+
+                    <div class="form-group col-md-6 text-right">
                     <button type="submit" class="btn btn-lg btn-success">Update</button>
                     </div>
 
 
 
-                    <div class="form-group col-md-6 text-right">
-                    <a href="./1/next"><button class="btn btn-lg btn-gray">Next</button></a>
-                    </div>
+
 
                 </div>
 
