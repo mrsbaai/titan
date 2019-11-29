@@ -95,38 +95,38 @@ class HomeController extends Controller
         $NextID = null;
         switch ($status) {
             case "All":
-                $NextID = DB::table('costumers')->where('id', '>', $id)->orderBy('created_at', 'desc')->first();
-                $PreviousID = DB::table('costumers')->where('id', '<', $id)->orderBy('created_at', 'desc')->first();
+                $NextID = DB::table('costumers')->where('id', '<', $id)->orderBy('created_at', 'desc')->first();
+                $PreviousID = DB::table('costumers')->where('id', '>', $id)->orderBy('created_at', 'desc')->first();
                 if ($NextID){$NextID = $NextID->id;}
                 if ($PreviousID){$PreviousID = $PreviousID->id;}
                 break;
             case "New":
-                $NextID = DB::table('costumers')->where('id', '>', $id)->where('status', 'New')->orderBy('created_at', 'desc')->first();
-                $PreviousID = DB::table('costumers')->where('id', '<', $id)->where('status', 'New')->orderBy('created_at', 'desc')->first();
+                $NextID = DB::table('costumers')->where('id', '<', $id)->where('status', 'New')->orderBy('created_at', 'desc')->first();
+                $PreviousID = DB::table('costumers')->where('id', '>', $id)->where('status', 'New')->orderBy('created_at', 'desc')->first();
                 if ($NextID){$NextID = $NextID->id;}
                 if ($PreviousID){$PreviousID = $PreviousID->id;}
             break;
             case "Shipped":
-                $NextID = DB::table('costumers')->where('id', '>', $id)->where('status', 'Shipped')->orderBy('created_at', 'desc')->first();
-                $PreviousID = DB::table('costumers')->where('id', '<', $id)->where('status', 'Shipped')->orderBy('created_at', 'desc')->first();   
+                $NextID = DB::table('costumers')->where('id', '<', $id)->where('status', 'Shipped')->orderBy('created_at', 'desc')->first();
+                $PreviousID = DB::table('costumers')->where('id', '>', $id)->where('status', 'Shipped')->orderBy('created_at', 'desc')->first();   
                 if ($NextID){$NextID = $NextID->id;}
                 if ($PreviousID){$PreviousID = $PreviousID->id;}  
                 break;
             case "Processed":
-                $NextID = DB::table('costumers')->where('id', '>', $id)->where('status', 'Processed')->orderBy('created_at', 'desc')->first();
-                $PreviousID = DB::table('costumers')->where('id', '<', $id)->where('status', 'Processed')->orderBy('created_at', 'desc')->first();
+                $NextID = DB::table('costumers')->where('id', '<', $id)->where('status', 'Processed')->orderBy('created_at', 'desc')->first();
+                $PreviousID = DB::table('costumers')->where('id', '>', $id)->where('status', 'Processed')->orderBy('created_at', 'desc')->first();
                 if ($NextID){$NextID = $NextID->id;}
                 if ($PreviousID){$PreviousID = $PreviousID->id;}
                 break;
             case "Completed":
-                $NextID = DB::table('costumers')->where('id', '>', $id)->where('status', 'Completed')->orderBy('created_at', 'desc')->first();
-                $PreviousID = DB::table('costumers')->where('id', '<', $id)->where('status', 'Completed')->orderBy('created_at', 'desc')->first();
+                $NextID = DB::table('costumers')->where('id', '<', $id)->where('status', 'Completed')->orderBy('created_at', 'desc')->first();
+                $PreviousID = DB::table('costumers')->where('id', '>', $id)->where('status', 'Completed')->orderBy('created_at', 'desc')->first();
                 if ($NextID){$NextID = $NextID->id;}
                 if ($PreviousID){$PreviousID = $PreviousID->id;}
                 break;
             case "Deleted":
-                $NextID = DB::table('costumers')->where('id', '>', $id)->where('status', 'Deleted')->orderBy('created_at', 'desc')->first();
-                $PreviousID = DB::table('costumers')->where('id', '<', $id)->where('status', 'Deleted')->orderBy('created_at', 'desc')->first();
+                $NextID = DB::table('costumers')->where('id', '<', $id)->where('status', 'Deleted')->orderBy('created_at', 'desc')->first();
+                $PreviousID = DB::table('costumers')->where('id', '>', $id)->where('status', 'Deleted')->orderBy('created_at', 'desc')->first();
                 if ($NextID){$NextID = $NextID->id;}
                 if ($PreviousID){$PreviousID = $PreviousID->id;}
                 break;
