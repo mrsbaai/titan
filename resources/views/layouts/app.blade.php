@@ -80,6 +80,8 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    
+                                    <a class="dropdown-item" href="/home">All Orders</a>
                                     <a class="dropdown-item" href="/new">New Orders</a>
                                     <a class="dropdown-item" href="/shipped">Shipped Orders</a>
                                     <a class="dropdown-item" href="/processed">Processed Orders</a>
