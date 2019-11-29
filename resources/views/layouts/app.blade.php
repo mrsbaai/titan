@@ -5,6 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="http://www.codermen.com/js/jquery.js"></script>
+    <script src="js/moment.js"></script>
+    <script>
+            moment.lang('precise-en', {
+                relativeTime : {
+                    future : "In %s",
+                    past : "%s ago",
+                    s : "%d seconds", //see https://github.com/timrwood/moment/pull/232#issuecomment-4699806
+                    m : "A minute",
+                    mm : "%d minutes",
+                    h : "An hour",
+                    hh : "%d hours",
+                    d : "A day",
+                    dd : "%d days",
+                    M : "A month",
+                    MM : "%d months",
+                    y : "a year",
+                    yy : "%d years"
+                }
+            });
+
+            moment.lang('precise-en');
+        </script>
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -85,27 +107,7 @@
         </main>
     </div>
 
-    <script src="js/moment.js"></script>
-        <script>
-            moment.lang('precise-en', {
-                relativeTime : {
-                    future : "In %s",
-                    past : "%s ago",
-                    s : "%d seconds", //see https://github.com/timrwood/moment/pull/232#issuecomment-4699806
-                    m : "A minute",
-                    mm : "%d minutes",
-                    h : "An hour",
-                    hh : "%d hours",
-                    d : "A day",
-                    dd : "%d days",
-                    M : "A month",
-                    MM : "%d months",
-                    y : "a year",
-                    yy : "%d years"
-                }
-            });
+   
 
-            moment.lang('precise-en');
-        </script>
 </body>
 </html>
