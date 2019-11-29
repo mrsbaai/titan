@@ -161,6 +161,7 @@ $(document).on('change', '#inputRegion', function() {
            success:function(res){               
             if(res){
                 $("#inputCity").empty();
+                $("#inputPoste").empty();
                 $("#inputCity").append('<option>Select</option>');
                 $.each(res,function(key,value){
                     $("#inputCity").append('<option value="'+key+'">'+value+'</option>');
