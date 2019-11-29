@@ -13,8 +13,8 @@
                 {{ Form::open(array('action' => 'HomeController@updateCostumer', 'id' => 'update'))}}
 
                 <div class="form-row">
-                    <h2>Created: {{$ret->created_at}}</h2>
-                    <h2>Updated: {{$ret->updated_at}}</h2>
+                    <h2>Created: <span id="created">{{$ret->created_at}}</span></h2>
+                    <h2>Updated: <span id="updated">{{$ret->updated_at}}</span></h2>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
