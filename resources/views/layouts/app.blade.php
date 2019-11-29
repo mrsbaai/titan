@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="http://www.codermen.com/js/jquery.js"></script>
-    <script src="{{ asset('assets/js/moment.js') }}"></script>
+    <script src="{{ asset('js/moment.js') }}"></script>
     <script>
             moment.lang('precise-en', {
                 relativeTime : {
