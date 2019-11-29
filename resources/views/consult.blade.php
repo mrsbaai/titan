@@ -10,7 +10,7 @@
 
                 <div class="card-body">
                 {{ Form::open(array('action' => 'HomeController@updateCostumer', 'id' => 'update'))}}
-                <inpute type="hidden" name="idOrder" id="idOrder" value="{{$ret->id}}">
+                <input type="hidden" name="idOrder" id="idOrder" value="{{$ret->id}}">
                 <div class="form-row">
                 <div class="form-group col-md-6"><h5>Created: <div id="created">{{$ret->created_at}}</div></h5><h4><div id="created2"></div></h4></div>
                 <div class="form-group col-md-6"><h5>Updated: <div id="updated">{{$ret->updated_at}}</div></h5><h4><div id="updated2"></div></h4></div>
