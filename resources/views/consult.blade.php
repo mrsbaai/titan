@@ -43,19 +43,7 @@
 
                     <div class="form-group col-md-6">
                     <label for="inputRegion">Region</label>
-                    <select id="inputRegion" name="inputRegion" class="form-control">
-                        <option value="" selected disabled>Select</option>
-                        <option value="AGADIR">AGADIR</option>
-                        <option value="CASABLANCA">CASABLANCA</option>
-                        <option value="FES">FES</option>
-                        <option value="LAAYOUNE">LAAYOUNE</option>
-                        <option value="MARRAKECH">MARRAKECH</option>
-                        <option value="MEKNES">MEKNES</option>
-                        <option value="OUJDA">OUJDA</option>
-                        <option value="RABAT">RABAT</option>
-                        <option value="SETTAT">SETTAT</option>
-                        <option value="TANGER">TANGER</option>
-                    </select>
+                    {!! Form::select('inputRegion', $allRegions, $ret->region, ['class' => 'form-control']) !!}
                     </div>
 
 

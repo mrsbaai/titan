@@ -53,8 +53,22 @@ class HomeController extends Controller
             "Home" => "Home",
             "Poste" => "Poste", 
         );
+
+        $allRegions  = array(
+            "" => "",
+            "AGADIR" => "AGADIR",
+            "CASABLANCA" => "CASABLANCA",
+            "FES" => "FES",
+            "LAAYOUNE" => "LAAYOUNE",
+            "MARRAKECH" => "MARRAKECH",
+            "MEKNES" => "MEKNES",
+            "OUJDA" => "OUJDA",
+            "RABAT" => "RABAT",
+            "SETTAT" => "SETTAT",
+            "TANGER" => "TANGER", 
+        );
   
-        return view('consult', ['ret' => $ret, 'allStatus' =>$allStatus, 'allShippingTypes' =>$allShippingTypes]);
+        return view('consult', ['ret' => $ret, 'allStatus' =>$allStatus, 'allShippingTypes' =>$allShippingTypes, 'allRegions' =>$allRegions]);
     }
 
 
