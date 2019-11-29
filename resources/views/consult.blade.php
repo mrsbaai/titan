@@ -12,8 +12,8 @@
                 {{ Form::open(array('action' => 'HomeController@updateCostumer', 'id' => 'update'))}}
 
                 <div class="form-row">
-                <div class="form-group col-md-6"><h4>Created: <div id="created">{{$ret->created_at}}</div></h4><h4><div id="created2"></div></h4></div>
-                <div class="form-group col-md-6"><h4>Updated: <div id="updated">{{$ret->updated_at}}</div></h4><h4><div id="created2"></div></h4></div>
+                <div class="form-group col-md-6"><h5>Created: <div id="created">{{$ret->created_at}}</div></h5><h4><div id="created2"></div></h4></div>
+                <div class="form-group col-md-6"><h5>Updated: <div id="updated">{{$ret->updated_at}}</div></h5><h4><div id="updated"></div></h4></div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
@@ -145,8 +145,8 @@
 <script type="text/javascript">
                 $(document).ready(function(){      
 
-                    document.getElementById('created2').innerText = moment(moment.utc( document.getElementById('created').innerText)).fromNow() + ".";
-                    document.getElementById('updated2').innerText = moment(moment.utc( document.getElementById('updated').innerText)).fromNow() + ".";
+                    document.getElementById('created2').innerText = "(" + moment(moment.utc( document.getElementById('created').innerText)).fromNow() + ")";
+                    document.getElementById('updated2').innerText = "(" +  moment(moment.utc( document.getElementById('updated').innerText)).fromNow() + ")";
                     
                 });
 
