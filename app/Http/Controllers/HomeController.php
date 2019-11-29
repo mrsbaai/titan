@@ -48,7 +48,8 @@ class HomeController extends Controller
         $costumer->phone = $request->input('inputNumber');
         $costumer->save();
 
-        return $request->input('idOrder');
+
+        return back();
 
     }
 
