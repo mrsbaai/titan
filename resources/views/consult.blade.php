@@ -87,12 +87,7 @@
                     
                         <div class="form-group">
                             <label for="inputStatus">Status</label>
-                            <select id="inputStatus" class="form-control">
-                                <option value="New">New</option>
-                                <option value="Processed">Processed</option>
-                                <option value="Shipped">Shipped</option>
-                                <option value="Completed">Completed</option>
-                            </select>
+                            {!! Form::select('inputStatus', $allStatus, $ret->status, ['class' => 'form-control']) !!}
                         </div>
 
                     </div>

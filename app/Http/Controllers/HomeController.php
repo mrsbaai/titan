@@ -41,6 +41,13 @@ class HomeController extends Controller
 
         
         $ret = DB::table('costumers')->where('id',$id)->first();
+        $allStatus  = array(
+            "New" => "New",
+            "Processed" => "Processed", 
+            "Shipped" => "Shipped",
+            "Completed" => "Completed",            
+            "Deleted" => "Deleted",
+        );
   
         return view('consult', ['ret' => $ret]);
     }
