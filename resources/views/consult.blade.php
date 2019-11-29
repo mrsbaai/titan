@@ -92,8 +92,8 @@
 
                 <div class="form-row">
                     <div class="form-group col-md-6 ">
-                    @if($PreviousID)<a class="btn btn-lg btn-gray" href="{{route('consult', ['id' => $PreviousID, 'status' => $ret->status])}}">< Previous</a>@endif
-                    @if($NextID)<a class="btn btn-lg btn-gray" href="{{route('consult', ['id' => $NextID, 'status' => $ret->status])}}">Next ></a>@endif
+                    @if($PreviousID)<button class="btn btn-lg btn-gray"><a href="{{route('consult', ['id' => $PreviousID, 'status' => $ret->status])}}">< Previous</a></button>@endif
+                    @if($NextID)<button class="btn btn-lg btn-gray"><a href="{{route('consult', ['id' => $NextID, 'status' => $ret->status])}}">Next ></a></button>@endif
                     </div>
 
 
