@@ -18,7 +18,7 @@
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="inputName">Full Name</label>
-                        <input type="text" class="form-control" id="inputName" placeholder="" value="{{$ret->name}}">
+                        <input type="text" class="form-control" id="inputName" name="inputName" placeholder="" value="{{$ret->name}}">
                     </div>
                 
 
@@ -29,13 +29,13 @@
 
                     <div class="form-group col-md-2">
                         <label for="inputAge">Age</label>
-                        <input type="text" class="form-control" id="inputAge" placeholder="" value="{{$ret->age}}">
+                        <input type="text" class="form-control" id="inputAge" name ="inputAge" placeholder="" value="{{$ret->age}}">
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label for="inputAddress">Address</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="" value="{{$ret->address}}">
+                    <input type="text" class="form-control" id="inputAddress" name="inputAddress" placeholder="" value="{{$ret->address}}">
                 </div>
 
      
@@ -67,7 +67,7 @@
                     <div class="form-group col-md-6">
                  
                         <label for="inputPrice">Price (Dirhams) (With shipping)</label>
-                        <input type="text" class="form-control" id="inputPrice" placeholder="" value="{{$ret->tprice}}">
+                        <input type="text" class="form-control" id="inputPrice" name="inputPrice" placeholder="" value="{{$ret->tprice}}">
         
                     </div>
                     
@@ -88,8 +88,8 @@
                         </div>
 
                 <div class="form-group">
-                    <label for="inputAddress2">Tracking Code</label>
-                    <input type="text" class="form-control" id="inputAddress2" value="{{$ret->tracking}}" placeholder="">
+                    <label for="inputTracking">Tracking Code</label>
+                    <input type="text" class="form-control" id="inputTracking" name="inputTracking" value="{{$ret->tracking}}" placeholder="">
                 </div>
 
                 <div class="form-row">
