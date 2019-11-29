@@ -6,24 +6,11 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Order #{{$ret->id}}</div>
-@if($ret->status == "Deleted")
-    <style>
-    input {
-        color: red;
-    }
-    select {
-        color: red;
-    }
-    .card-body {
-        color: red;
-    }
+                <div class="card-header">Order #{{$ret->id}} - <span @if($ret->status == "Deleted") style="color: red;" @endif><b>{{$ret->id}}</b></span></div>
 
-    </style>
-@endif
-                <div class="card-body">
+                <div class="card-body" @if($ret->status == "Deleted") style="color: red;" @endif>
                 {{ Form::open(array('action' => 'HomeController@updateCostumer', 'id' => 'update'))}}
-                <input type="hidden" name="idOrder" id="idOrder" value="{{$ret->id}}">
+                <input type="hidden" name="idOrder" id="idOrder" value="{{$ret->id}}" >
                 <div class="form-row">
                 <div class="form-group col-md-6"><h5>Created: <div id="created">{{$ret->created_at}}</div></h5><h4><div id="created2"></div></h4></div>
                 <div class="form-group col-md-6"><h5>Updated: <div id="updated">{{$ret->updated_at}}</div></h5><h4><div id="updated2"></div></h4></div>
