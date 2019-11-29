@@ -12,7 +12,10 @@
                 <div class="card-body">
                 {{ Form::open(array('action' => 'HomeController@updateCostumer', 'id' => 'update'))}}
 
-
+                <div class="form-row">
+                    <h2>Created: {{$ret->created_at}}</h2>
+                    <h2>Updated: {{$ret->updated_at}}</h2>
+                </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="inputName">Full Name</label>
@@ -86,10 +89,10 @@
                         <div class="form-group">
                             <label for="inputStatus">Status</label>
                             <select id="inputStatus" class="form-control">
-                                <option selected>New</option>
-                                <option>Needs Shipping</option>
-                                <option>Shipped</option>
-                                <option>Completed</option>
+                                <option value="New">New</option>
+                                <option value="Processed">Processed</option>
+                                <option value="Shipped">Shipped</option>
+                                <option value="Completed">Completed</option>
                             </select>
                         </div>
 
@@ -99,8 +102,8 @@
                 <div class="form-group">
                             <label for="inputShipping">Shipping Type</label>
                             <select id="inputShipping" class="form-control">
-                                <option selected>Poste</option>
-                                <option>Home</option>
+                                <option value="Poste">Poste</option>
+                                <option value="Home">Home</option>
                             </select>
                         </div>
 
@@ -140,6 +143,17 @@
 </div>
 
 
+<script type="text/javascript">
+                $(document).ready(function(){         
+                    var created = document.getElementById('created');
+                    var updated = document.getElementById('updated');
+                    created.innerHTML = moment(moment.utc(created.innerText)).fromNow() + ".";
+                    updated.innerHTML = moment(moment.utc(updated.innerText)).fromNow() + ".";
+                    
+                });
+
+                               
+</script>
 
 <script type="text/javascript">
 $(document).on('change', '#inputRegion', function() {

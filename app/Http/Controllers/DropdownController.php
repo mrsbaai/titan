@@ -22,7 +22,7 @@ class DropdownController extends Controller
         public function getPosteList(Request $request)
         {
 
-            $postes = DB::table("poste")->select(DB::raw('CONCAT(NOM_AGENCE, " - ", ADRESSE) AS addr'))
+            $postes = DB::table("poste")->select(DB::raw('CONCAT(NOM_AGENCE, ": ", ADRESSE) AS addr'))
             ->where("VILLECOMMUNE",$request->city_id)
             ->pluck("addr","addr");
             return response()->json($postes);
