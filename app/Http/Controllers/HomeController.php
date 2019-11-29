@@ -91,6 +91,8 @@ class HomeController extends Controller
     public function consult($id, $status)
     {
 
+        $PreviousID = null;
+        $NextID = null;
         switch ($status) {
             case "All":
                 $NextID = DB::table('costumers')->where('id', '>', $id)->orderBy('created_at', 'desc')->first();
@@ -172,7 +174,7 @@ class HomeController extends Controller
         ->pluck("addr","addr");
 
   
-        return view('consult', ['ret' => $ret, 'NextID' => $NextID, 'allStatus' =>$allStatus, 'allShippingTypes' =>$allShippingTypes, 'allRegions' =>$allRegions, 'allPostes' =>$allPostes, 'allCities' =>$allCities]);
+        return view('consult', ['ret' => $ret, 'NextID' => $NextID, 'PreviousID' => $PreviousID, 'allStatus' =>$allStatus, 'allShippingTypes' =>$allShippingTypes, 'allRegions' =>$allRegions, 'allPostes' =>$allPostes, 'allCities' =>$allCities]);
     }
 
 
