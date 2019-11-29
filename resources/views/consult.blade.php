@@ -24,7 +24,7 @@
 
                     <div class="form-group col-md-4">
                         <label for="inputNumber">Pone Number</label>
-                        <input type="text" class="form-control" id="inputNumber" placeholder="" value="{{$ret->phone}}">
+                        <input type="text" class="form-control" id="inputNumber" name="inputNumber" placeholder="" value="{{$ret->phone}}">
                     </div>
 
                     <div class="form-group col-md-2">
