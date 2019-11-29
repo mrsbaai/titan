@@ -35,7 +35,7 @@ class HomeController extends Controller
 
         $costumer = costumer::find($request->input('id'));
 
-        $costumer->age = $request->input('age');
+        $costumer->age = $request->input('inputAge');
 
         $costumer->save();
 
