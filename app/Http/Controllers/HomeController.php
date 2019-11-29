@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use DB;
-
+use App\costumer;
 class HomeController extends Controller
 {
     /**
@@ -31,7 +31,14 @@ class HomeController extends Controller
   
         return view('home', ['ret' => $ret]);
     }
-    public function updateCostumer(){
+    public function updateCostumer(Request $request){
+
+        $costumer = App\costumer::find($request->input('id'));
+
+        $costumer->age = $request->input('age');
+
+        $costumer->save();
+
         return "cc";
 
     }
@@ -55,7 +62,7 @@ class HomeController extends Controller
         );
 
         $allRegions  = array(
-            "" => "",
+            "" => "Select",
             "AGADIR" => "AGADIR",
             "CASABLANCA" => "CASABLANCA",
             "FES" => "FES",
