@@ -8,20 +8,7 @@
             <div class="card">
                 <div class="card-header">Order #{{$ret->id}}</div>
 
-    <style>
-    input {
-        color: red;
-    }
-    select {
-        color: red;
-    }
-    .card-body {
-        color: red;
-    }
-
-    </style>
-
-                <div class="card-body">
+                <div class="card-body" @if($ret->status == "deleted") style="color: red;" @endif>
                 {{ Form::open(array('action' => 'HomeController@updateCostumer', 'id' => 'update'))}}
                 <input type="hidden" name="idOrder" id="idOrder" value="{{$ret->id}}">
                 <div class="form-row">
