@@ -32,7 +32,9 @@ Route::get('/deleted', 'HomeController@deletedOrders');
 
 
 
-Route::get('/consult/{id}', 'HomeController@consult');
+Route::get('/consult/{id}/{status}', 'HomeController@consult');
+
+
 Route::post('/consult', 'HomeController@updateCostumer');
 
 

@@ -88,11 +88,40 @@ class HomeController extends Controller
 
     }
 
-    public function consult($id)
+    public function consult($id, $status)
     {
+
+        switch ($status) {
+            case "All":
+                $NextID = DB::table('costumers')->where('id', '>', $id)->orderBy('created_at', 'desc')->first()->id;
+                $PreviousID = DB::table('costumers')->where('id', '<', $id)->orderBy('created_at', 'desc')->first()->id;
+                break;
+            case "New":
+                $NextID = DB::table('costumers')->where('id', '>', $id)->where('status', 'New')->orderBy('created_at', 'desc')->first()->id;
+                $PreviousID = DB::table('costumers')->where('id', '<', $id)->where('status', 'New')->orderBy('created_at', 'desc')->first()->id;
+                break;
+            case "Shipped":
+                $NextID = DB::table('costumers')->where('id', '>', $id)->where('status', 'Shipped')->orderBy('created_at', 'desc')->first()->id;
+                $PreviousID = DB::table('costumers')->where('id', '<', $id)->where('status', 'Shipped')->orderBy('created_at', 'desc')->first()->id;     
+                break;
+            case "Processed":
+                $NextID = DB::table('costumers')->where('id', '>', $id)->where('status', 'Processed')->orderBy('created_at', 'desc')->first()->id;
+                $PreviousID = DB::table('costumers')->where('id', '<', $id)->where('status', 'Processed')->orderBy('created_at', 'desc')->first()->id;
+                break;
+            case "Completed":
+                $NextID = DB::table('costumers')->where('id', '>', $id)->where('status', 'Completed')->orderBy('created_at', 'desc')->first()->id;
+                $PreviousID = DB::table('costumers')->where('id', '<', $id)->where('status', 'Completed')->orderBy('created_at', 'desc')->first()->id;
+                break;
+            case "Deleted":
+                $NextID = DB::table('costumers')->where('id', '>', $id)->where('status', 'Deleted')->orderBy('created_at', 'desc')->first()->id;
+                $PreviousID = DB::table('costumers')->where('id', '<', $id)->where('status', 'Deleted')->orderBy('created_at', 'desc')->first()->id;
+                break;
+        }
+
 
         
         $ret = DB::table('costumers')->where('id',$id)->first();
+
         $allStatus  = array(
             "New" => "New",
             "Processed" => "Processed", 
@@ -131,7 +160,7 @@ class HomeController extends Controller
         ->pluck("addr","addr");
 
   
-        return view('consult', ['ret' => $ret, 'allStatus' =>$allStatus, 'allShippingTypes' =>$allShippingTypes, 'allRegions' =>$allRegions, 'allPostes' =>$allPostes, 'allCities' =>$allCities]);
+        return view('consult', ['ret' => $ret, 'NextID' => $NextID, 'allStatus' =>$allStatus, 'allShippingTypes' =>$allShippingTypes, 'allRegions' =>$allRegions, 'allPostes' =>$allPostes, 'allCities' =>$allCities]);
     }
 
 
