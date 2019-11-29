@@ -35,8 +35,17 @@ class HomeController extends Controller
 
         $costumer = costumer::find($request->input('idOrder'));
 
+        $costumer->name = $request->input('inputName');
         $costumer->age = $request->input('inputAge');
-
+        $costumer->address = $request->input('inputAddress');
+        $costumer->region = $request->input('inputRegion');
+        $costumer->city = $request->input('inputCity');
+        $costumer->tprice = $request->input('inputPrice');
+        $costumer->status = $request->input('inputStatus');
+        $costumer->shipmentType = $request->input('inputShipping');
+        $costumer->tracking = $request->input('inputTracking');
+        $costumer->post = $request->input('inputPost');
+        $costumer->phone = $request->input('inputNumber');
         $costumer->save();
 
         return $request->input('idOrder');
