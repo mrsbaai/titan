@@ -92,8 +92,8 @@
 
                 <div class="form-row">
                     <div class="form-group col-md-6 ">
-                    <a href="./1"><button class="btn btn-lg btn-gray">< Previous</button></a>
-                    <a href="./1"><button class="btn btn-lg btn-gray">Next ></button></a>
+                    @if($PreviousID)<a href="./{{$PreviousID}}/{{$ret->status}}"><button class="btn btn-lg btn-gray">< Previous</button></a>@endif
+                    @if($NextID)<a href="./{{$NextID}}/{{$ret->status}}"><button class="btn btn-lg btn-gray">Next ></button></a>>@endif
                     </div>
 
 
