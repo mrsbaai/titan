@@ -43,7 +43,7 @@
 
                     <div class="form-group col-md-6">
                     <label for="inputRegion">Region</label>
-                    {!! Form::select('inputRegion', $allRegions, $ret->region, ['class' => 'form-control']) !!}
+                    {!! Form::select('inputRegion', $allRegions, $ret->region, ['class' => 'form-control', 'id' => 'inputRegion']) !!}
                     </div>
 
 
