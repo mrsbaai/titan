@@ -49,7 +49,7 @@ class HomeController extends Controller
             "Deleted" => "Deleted",
         );
   
-        return view('consult', ['ret' => $ret]);
+        return view('consult', ['ret' => $ret, 'allStatus' =>$allStatus]);
     }
 
 
