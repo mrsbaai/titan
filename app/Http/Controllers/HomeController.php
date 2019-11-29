@@ -33,13 +33,13 @@ class HomeController extends Controller
     }
     public function updateCostumer(Request $request){
 
-        $costumer = costumer::find($request->input('id'));
+        $costumer = costumer::find($request->input('idOrder'));
 
         $costumer->age = $request->input('inputAge');
 
         $costumer->save();
 
-        return $request->input('inputAge');
+        return $request->input('idOrder');
 
     }
 
