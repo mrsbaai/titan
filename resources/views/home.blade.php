@@ -36,7 +36,7 @@
                             <th>{{$data->phone}}</th>
                             <th>{{$data->status}}</th>
                             <th>{{$data->created_at}}</th>    
-                            <th><a href="/consult/{{$data->id}}"><button type="button" class="btn btn-success">Consult</button></a></th>              
+                            <th><a href="/consult/{{$data->id}}/{{$data->status}}"><button type="button" class="btn btn-success">Consult</button></a></th>              
                             </tr>
                             @endforeach
                         
