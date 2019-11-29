@@ -148,8 +148,8 @@
                     alert("redy");   
                     var created = document.getElementById('created');
                     var updated = document.getElementById('updated');
-                    created.innerHTML = moment(moment.utc(created.innerText)).fromNow() + ".";
-                    updated.innerHTML = moment(moment.utc(updated.innerText)).fromNow() + ".";
+                    created.innerText = moment(moment.utc(created.innerText)).fromNow() + ".";
+                    updated.innerText = moment(moment.utc(updated.innerText)).fromNow() + ".";
                     
                 });
 
