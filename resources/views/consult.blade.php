@@ -94,11 +94,9 @@
                 </div>
 
                 <div class="form-group">
-                            <label for="inputShipping">Shipping Type</label>
-                            <select id="inputShipping" class="form-control">
-                                <option value="Poste">Poste</option>
-                                <option value="Home">Home</option>
-                            </select>
+                            <label for="inputShippingType">Shipping Type</label>
+                            {!! Form::select('inputShipping', $allShippingTypes, $ret->shipmentType, ['class' => 'form-control']) !!}
+
                         </div>
 
                 <div class="form-group">

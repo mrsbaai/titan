@@ -48,8 +48,13 @@ class HomeController extends Controller
             "Completed" => "Completed",            
             "Deleted" => "Deleted",
         );
+
+        $allShippingtypes  = array(
+            "Home" => "Home",
+            "Poste" => "Poste", 
+        );
   
-        return view('consult', ['ret' => $ret, 'allStatus' =>$allStatus]);
+        return view('consult', ['ret' => $ret, 'allStatus' =>$allStatus, 'allShippingtypes' =>$allShippingtypes]);
     }
 
 
