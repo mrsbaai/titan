@@ -132,8 +132,8 @@
 
                     if($('#inputRegion')){
                        
-                       var regionID = $(this).val();   
-                       alert(regionID); 
+                       var regionID = $('#inputRegion').val();   
+              
                        if(regionID){
 
                            $.ajax({
@@ -159,7 +159,7 @@
                        } 
                    }
                    if($('#inputCity')){
-                       var cityID = $(this).val();    
+                       var cityID = $('#inputCity').val();    
                        if(cityID){
                            $.ajax({
                            type:"GET",
