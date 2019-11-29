@@ -44,7 +44,7 @@ class HomeController extends Controller
         $costumer->status = $request->input('inputStatus');
         $costumer->shipmentType = $request->input('inputShipping');
         $costumer->tracking = $request->input('inputTracking');
-        $costumer->post = $request->input('inputPost');
+        $costumer->poste = $request->input('inputPoste');
         $costumer->phone = $request->input('inputNumber');
         $costumer->save();
 
