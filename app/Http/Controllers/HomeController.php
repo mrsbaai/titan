@@ -83,8 +83,19 @@ class HomeController extends Controller
             "SETTAT" => "SETTAT",
             "TANGER" => "TANGER", 
         );
+
+
+        $allCities = DB::table("poste")
+        ->where("REGION",$ret->region)
+        ->groupBy('VILLECOMMUNE')
+        ->pluck("VILLECOMMUNE","VILLECOMMUNE");
+
+        $allPostes = DB::table("poste")->select(DB::raw('CONCAT(NOM_AGENCE, ": ", ADRESSE) AS addr'))
+        ->where("VILLECOMMUNE",$ret->city)
+        ->pluck("addr","addr");
+
   
-        return view('consult', ['ret' => $ret, 'allStatus' =>$allStatus, 'allShippingTypes' =>$allShippingTypes, 'allRegions' =>$allRegions]);
+        return view('consult', ['ret' => $ret, 'allStatus' =>$allStatus, 'allShippingTypes' =>$allShippingTypes, 'allRegions' =>$allRegions, 'allPostes' =>$allPostes, 'allCities' =>$allCities]);
     }
 
 

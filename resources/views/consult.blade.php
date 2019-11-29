@@ -49,8 +49,7 @@
 
                     <div class="form-group col-md-6">
                     <label for="inputCity">City</label>
-                    <select id="inputCity" name="inputCity" class="form-control">
-                    </select>
+                    {!! Form::select('inputCity', $allCities, $ret->city, ['class' => 'form-control', 'id' => 'inputCity']) !!}
                     </div>
 
 
@@ -58,8 +57,7 @@
 
                 <div class="form-group">
                     <label for="inputPoste">Poste</label>
-                    <select id="inputPoste" name="inputPoste" class="form-control">
-                    </select>
+                    {!! Form::select('inputPoste', $allPostes, $ret->poste, ['class' => 'form-control', 'id' => 'inputPoste']) !!}
                 </div>
 
                 <div class="form-row">
@@ -129,58 +127,6 @@
                     document.getElementById('created2').innerText = "(" + moment(moment.utc( document.getElementById('created').innerText)).fromNow() + ")";
                     document.getElementById('updated2').innerText = "(" +  moment(moment.utc( document.getElementById('updated').innerText)).fromNow() + ")";
                     
-
-                    if($('#inputRegion')){
-                       
-                       var regionID = $('#inputRegion').val();   
-              
-                       if(regionID){
-
-                           $.ajax({
-                           type:"GET",
-                           url:"{{url('get-city-list')}}?region_id="+regionID,
-                           success:function(res){               
-                               if(res){
-                                   $("#inputCity").empty();
-                                   $("#inputPoste").empty();
-                                   $("#inputCity").append('<option>Select</option>');
-                                   $.each(res,function(key,value){
-                                       $("#inputCity").append('<option value="'+key+'">'+value+'</option>');
-                                   });
-                           
-                               }else{
-                               $("#inputCity").empty();
-                               }
-                           }
-                           });
-                       }else{
-                           $("#inputCity").empty();
-                           $("#inputPoste").empty();
-                       } 
-                   }
-                   if($('#inputCity')){
-                       var cityID = $('#inputCity').val();    
-                       if(cityID){
-                           $.ajax({
-                           type:"GET",
-                           url:"{{url('get-poste-list')}}?city_id="+cityID,
-                           success:function(res){               
-                               if(res){
-                                   $("#inputPoste").empty();
-                                   $.each(res,function(key,value){
-                                       $("#inputPoste").append('<option value="'+key+'">'+value+'</option>');
-                                   });
-                           
-                               }else{
-                               $("#inputPoste").empty();
-                               }
-                           }
-                           });
-                       }else{
-                           $("#inputPoste").empty();
-                       }
-
-                   }
 
                 });
 
