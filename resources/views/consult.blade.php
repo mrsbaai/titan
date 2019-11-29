@@ -2,7 +2,6 @@
 
 
 @section('content')
-<script src="http://www.codermen.com/js/jquery.js"></script>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
