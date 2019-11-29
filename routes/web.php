@@ -19,11 +19,22 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+
+Route::get('/new', 'HomeController@newOrders');
+
+Route::get('/shipped', 'HomeController@shippedOrders');
+
+Route::get('/processed', 'HomeController@processedOrders');
+
+Route::get('/completed', 'HomeController@completedOrders');
+
+Route::get('/deleted', 'HomeController@deletedOrders');
+
+
+
 Route::get('/consult/{id}', 'HomeController@consult');
-
 Route::post('/consult', 'HomeController@updateCostumer');
 
-Route::post('/consult', 'HomeController@updateCostumer');
 
 
 Route::get('get-poste-list','DropdownController@getPosteList');

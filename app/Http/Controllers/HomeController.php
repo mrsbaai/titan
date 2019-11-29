@@ -25,12 +25,47 @@ class HomeController extends Controller
      */
     public function index()
     {
-
-        
         $ret = DB::table('costumers')->orderBy('created_at', 'desc')->get();
-  
-        return view('home', ['ret' => $ret]);
+        return view('home', ['ret' => $ret, 'title' => "All Orders"]);
     }
+
+
+    public function newOrders()
+    {
+        $ret = DB::table('costumers')->where('status', 'New')->orderBy('created_at', 'desc')->get();
+        return view('home', ['ret' => $ret, 'title' => "New Orders"]);
+    }
+
+    public function shippedOrders()
+    {
+        $ret = DB::table('costumers')->where('status', 'Shipped')->orderBy('created_at', 'desc')->get();
+        return view('home', ['ret' => $ret, 'title' => "Shipped Orders"]);
+    }
+
+
+    public function processedOrders()
+    {
+        $ret = DB::table('costumers')->where('status', 'Processed')->orderBy('created_at', 'desc')->get();
+        return view('home', ['ret' => $ret, 'title' => "Processed Orders"]);
+    }
+
+
+    public function completedOrders()
+    {
+        $ret = DB::table('costumers')->where('status', 'Completed')->orderBy('created_at', 'desc')->get();
+        return view('home', ['ret' => $ret, 'title' => "Completed Orders"]);
+    }
+
+
+    public function deletedOrders()
+    {
+        $ret = DB::table('costumers')->where('status', 'Deleted')->orderBy('created_at', 'desc')->get();
+        return view('home', ['ret' => $ret, 'title' => "Deleted Orders"]);
+    }
+
+
+
+
     public function updateCostumer(Request $request){
 
         $costumer = costumer::find($request->input('idOrder'));
