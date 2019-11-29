@@ -7,7 +7,7 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">Order #{{$ret->id}}</div>
-@if($ret->status === "deleted")
+@if($ret->status == "deleted")
     <style>
     input {
         color: red;
@@ -18,7 +18,7 @@
     .card-body {
         color: red;
     }
-    
+
     </style>
 @endif
                 <div class="card-body">
