@@ -12,8 +12,8 @@
                 {{ Form::open(array('action' => 'HomeController@updateCostumer', 'id' => 'update'))}}
 
                 <div class="form-row">
-                <div class="form-group col-md-6"><h3>Created: <div id="created">{{$ret->created_at}}</div></h3></div>
-                <div class="form-group col-md-6"><h3>Updated: <div id="updated">{{$ret->updated_at}}</div></h3></div>
+                <div class="form-group col-md-6"><h4>Created: <div id="created">{{$ret->created_at}}</div></h4></div>
+                <div class="form-group col-md-6"><h4>Updated: <div id="updated">{{$ret->updated_at}}</div></h5></div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
@@ -144,7 +144,6 @@
 
 <script type="text/javascript">
                 $(document).ready(function(){      
-                    alert("redy");   
                     var created = document.getElementById('created');
                     var updated = document.getElementById('updated');
                     created.innerText = moment(moment.utc(created.innerText)).fromNow() + ".";
