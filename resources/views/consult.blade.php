@@ -18,6 +18,7 @@
     .card-body {
         color: red;
     }
+    
     </style>
 @endif
                 <div class="card-body">
