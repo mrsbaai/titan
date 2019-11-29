@@ -138,6 +138,7 @@
 
 $(document).ready(function(){         
                     if($('#inputRegion')){
+                        alert("ff";)
                         var regionID = $(this).val();    
                         if(regionID){
 
