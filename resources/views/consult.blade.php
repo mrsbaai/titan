@@ -6,7 +6,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Order #{{$ret->id}} - <span @if($ret->status == "Deleted") style="color: red;" @endif><b>{{$ret->id}}</b></span></div>
+                <div class="card-header"><h4>Order #{{$ret->id}} - <span @if($ret->status == "Deleted") style="color: red;" @endif><b>{{$ret->status}}</b></span></h4></div>
 
                 <div class="card-body" @if($ret->status == "Deleted") style="color: red;" @endif>
                 {{ Form::open(array('action' => 'HomeController@updateCostumer', 'id' => 'update'))}}
@@ -93,14 +93,12 @@
                 <div class="form-row">
                     <div class="form-group col-md-6">
                     <button type="submit" class="btn btn-lg btn-success">Update</button>
-
-                    <a href="/2/delete"><button class="btn btn-lg btn-danger">Delete</button></a>
                     </div>
 
 
 
                     <div class="form-group col-md-6 text-right">
-                    <a href="/1/next"><button class="btn btn-lg btn-gray">Next</button></a>
+                    <a href="./1/next"><button class="btn btn-lg btn-gray">Next</button></a>
                     </div>
 
                 </div>
