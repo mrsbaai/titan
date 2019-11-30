@@ -73,7 +73,7 @@ class HomeController extends Controller
         $ret = DB::table('costumers')->where('status', 'Processed')->orderBy('created_at', 'desc')->get();
         $data = ['ret' => $ret];
         $pdf = PDF::loadView('ordersPDF', $data);
-        $fileName = "orders_" . Carbon::now('GMT')->format('Y-m-d-H-s') . ".pdf";
+        $fileName = "orders_" . Carbon::now()->format('Y-m-d-H-s') . ".pdf";
         return $pdf->download($fileName);
 
     }

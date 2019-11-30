@@ -43,7 +43,7 @@
 <br/>
 <br/>Tracking Code: {{$data->tracking}}
 <br/>
-<br/>Notes: {{nl2br(e($data->notes))}}
+<br/>Notes: {{rawurlencode(nl2br(e($data->notes)))}}
 </div>
 <div class="page-break"></div>
 @endforeach
