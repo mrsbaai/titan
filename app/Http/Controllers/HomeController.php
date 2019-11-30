@@ -69,9 +69,9 @@ class HomeController extends Controller
 
     {
 
-        $ret = DB::table('costumers')->where('status', 'Processed')->orderBy('created_at', 'desc')->get();
+        $data->ret = DB::table('costumers')->where('status', 'Processed')->orderBy('created_at', 'desc')->get();
 
-        $pdf = PDF::loadView('ordersPDF', $ret);
+        $pdf = PDF::loadView('ordersPDF', $data);
         return $pdf->download('Orders.pdf');
 
     }
