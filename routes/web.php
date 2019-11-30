@@ -41,3 +41,5 @@ Route::post('/consult', 'HomeController@updateCostumer');
 
 Route::get('get-poste-list','DropdownController@getPosteList');
 Route::get('get-city-list','DropdownController@getCityList');
+
+Route::get('orders-pdf','HomeController@generateNeedShippingPDF');

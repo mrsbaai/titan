@@ -64,7 +64,15 @@ class HomeController extends Controller
     }
 
 
+    public function generateNeedShippingPDF()
 
+    {
+
+        $data = ['title' => 'this is a test'];
+        $pdf = PDF::loadView('ordersPDF', $data);
+        return $pdf->download('Orders.pdf');
+
+    }
 
     public function updateCostumer(Request $request){
 
