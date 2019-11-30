@@ -1,3 +1,4 @@
+
 @extends('layouts.app')
 
 
@@ -25,25 +26,6 @@
                     </div>
                 </div>
 
-                <div class="form-row">
-                    <div class="form-group col-md-4">
-                        <label for="inputName">Full Name</label>
-                        <input type="text" class="form-control" id="inputName" name="inputName" placeholder="" value="{{$ret->name}}">
-                    </div>
-                
-
-                    <div class="form-group col-md-4">
-                        <label for="inputNumber">Pone Number</label>
-                        <input type="text" class="form-control" id="inputNumber" name="inputNumber" placeholder="" value="{{$ret->phone}}">
-                    </div>
-
-                    <div class="form-group col-md-4">
-                        <label for="inputAge">Age</label>
-                        <input type="text" class="form-control" id="inputAge" name ="inputAge" placeholder="" value="{{$ret->age}}">
-                    </div>
-                </div>
-
-                
                 <div class="form-row">
 
                         <div class="form-group col-md-3">
@@ -75,12 +57,29 @@
                         </div>
                         
     
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputName">Full Name</label>
+                        <input type="text" class="form-control" id="inputName" name="inputName" placeholder="" value="{{$ret->name}}">
+                    </div>
+                
+
+                    <div class="form-group col-md-4">
+                        <label for="inputNumber">Pone Number</label>
+                        <input type="text" class="form-control" id="inputNumber" name="inputNumber" placeholder="" value="{{$ret->phone}}">
                     </div>
 
-                <div class="form-group">
-                    <label for="inputAddress">Address</label>
-                    <input type="text" class="form-control" id="inputAddress" name="inputAddress" placeholder="" value="{{$ret->address}}">
+                    <div class="form-group col-md-4">
+                        <label for="inputAge">Age</label>
+                        <input type="text" class="form-control" id="inputAge" name ="inputAge" placeholder="" value="{{$ret->age}}">
+                    </div>
                 </div>
+
+                
+
+
 
      
                 <div class="form-row">
@@ -100,8 +99,13 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="inputPoste">Poste</label>
+                    <label for="inputPoste">Poste Address</label>
                     {!! Form::select('inputPoste', $allPostes, $ret->poste, ['class' => 'form-control', 'id' => 'inputPoste']) !!}
+                </div>
+
+                <div class="form-group">
+                        <label for="inputAddress">Home Address</label>
+                        <input type="text" class="form-control" id="inputAddress" name="inputAddress" placeholder="" value="{{$ret->address}}">
                 </div>
 
 

@@ -17,7 +17,7 @@ class AddNotesToCostumers extends Migration
             $table->double('amount')->nullable()->default(1);
             $table->string('product')->nullable()->default("Titan Gel");
             $table->string('notes')->nullable()->default(null);
-            $table->string('shiping_price')->nullable()->default("0");
+            $table->string('shipping_price')->nullable()->default("0");
             $table->string('unit_price')->nullable()->default("0");
 
         });
@@ -34,7 +34,7 @@ class AddNotesToCostumers extends Migration
             $table->dropColumn('amount');
             $table->dropColumn('product'); 
             $table->dropColumn('notes');
-            $table->dropColumn('shiping_price');
+            $table->dropColumn('shipping_price');
             $table->dropColumn('unit_price'); 
         });
     }
