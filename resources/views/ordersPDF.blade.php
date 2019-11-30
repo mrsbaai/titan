@@ -3,7 +3,7 @@
             page-break-after: always;
         }
         .content {
-            font-size: 150%;
+            font-size: 120%;
             font-family: Arial, Helvetica, sans-serif;
         }
 </style>
@@ -11,7 +11,7 @@
 @foreach($ret as $key => $data)
 <div class="content">
 <br/>
-<center><h1>Order#: {{$data->id}} - {{$data->product}} - {{$data->status}}</h1></center>
+<center><h2>Order#: {{$data->id}} - {{$data->product}} - {{$data->status}}</h2></center>
 <br/>
 <br/>Created: {{$data->created_at}}
 <br/>
