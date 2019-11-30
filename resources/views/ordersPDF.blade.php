@@ -2,31 +2,48 @@
         .page-break {
             page-break-after: always;
         }
+        .content {
+            font-size: 150%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 </style>
 
 @foreach($ret as $key => $data)
-<br/>Order#: {{$data->id}} - {{$data->product}} - {{$data->status}}</b>
+<div class="content">
+<br/><h1>Order#: {{$data->id}} - {{$data->product}} - {{$data->status}}</h1>
 <br/>
-<br/>Created: 2019-11-29 21:06:14
-<br/>Updated: 2019-11-30 12:57:21
+<br/>Created: {{$data->created_at}}
 <br/>
-<br/>Amount: 1
-<br/>Unit Price (Dirhams): 449
-<br/>Shipping Price (Dirhams): 449
-<br/>Total Price (Dirhams): 449
+<br/>Updated:  {{$data->updated_at}}
 <br/>
-<br/>Full Name: {{$data->name}}
-<br/>Pone Number: 0645678905
-<br/>Age: 30
+<br/><b>Amount: {{$data->amount}}</b>
 <br/>
-<br/>Region: 
+<br/>Unit Price (Dirhams):  {{$data->unit_price}}
+<br/>
+<br/>Shipping Price (Dirhams): {{$data->shipping_price}}
+<br/>
+<br/>Total Price (Dirhams): <b>{{$data->tprice}}</b>
+<br/>
+<br/>Full Name: <b>{{$data->name}}</b>
+<br/>
+<br/>Pone Number: <b>{{$data->phone}}</b>
+<br/>
+<br/>Age: {{$data->age}}
+<br/>
+<br/>Region: {{$data->region}}
+<br/>
 <br/>City: {{$data->city}}
-<br/>Poste Address: 
-<br/>Home Address: 
-<br/>Shipping Type: 
-<br/>Tracking Code: 
 <br/>
-<br/>Notes: 
+<br/>Poste Address: {{$data->poste}}
+<br/>
+<br/>Home Address: {{$data->address}}
+<br/>
+<br/>Shipping Type: {{$data->shipmentType}}
+<br/>
+<br/>Tracking Code: {{$data->tracking}}
+<br/>
+<br/>Notes: {{$data->notes}}
+</div>
 <div class="page-break"></div>
 @endforeach
 
