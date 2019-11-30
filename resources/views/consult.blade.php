@@ -122,7 +122,7 @@
 
                 <div class="form-group">
                         <label for="inputNotes">Notes</label>
-                        <textarea class="form-control" id="inputNotes" naùe="inputNotes" rows="6">{{$ret->notes}}</textarea>
+                        <textarea class="form-control" id="inputNotes" name="inputNotes" rows="6">{{$ret->notes}}</textarea>
                 </div>
                       
 
