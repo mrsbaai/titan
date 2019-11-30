@@ -6,10 +6,11 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
+                    {{ Form::open(array('action' => 'HomeController@updateCostumer', 'id' => 'update'))}}
                 <div class="card-header"><h4>Order #{{$ret->id}} - <span @if($ret->status == "Deleted") style="color: red;" @endif><b>{!! Form::select('inputStatus', $allStatus, $ret->status, ['class' => 'form-control']) !!}</b></span></h4></div>
 
                 <div class="card-body" @if($ret->status == "Deleted") style="color: red;" @endif>
-                {{ Form::open(array('action' => 'HomeController@updateCostumer', 'id' => 'update'))}}
+                
                 <input type="hidden" name="idOrder" id="idOrder" value="{{$ret->id}}" >
                 <div class="form-row">
                 <div class="form-group col-md-6" style="font-size:150%;">Created: <span id="created" style="float:right;">{{$ret->created_at}}</span><h4><div  style="float:right;" id="created2"></div></h4></div>
