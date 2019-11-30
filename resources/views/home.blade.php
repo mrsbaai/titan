@@ -8,10 +8,10 @@
     <div class="row justify-content-center">
         <div class="col-md-10">
             <div class="card">
-                <div class="card-header"><h4>Edit an order</h4></div>
+                <div class="card-header"><h4>Edit an Order</h4></div>
 
                 <div class="card-body">
-                        <form>
+                        {{ Form::open(array('action' => 'HomeController@editOrder', 'id' => 'edit'))}}
                                 <div class="form-row align-items-center">
                                         <div class="col-auto">
                                           <label class="sr-only" for="inlineFormInput">Order #: </label>
@@ -23,13 +23,15 @@
                                         </div>
                                 </div>
                                 
-                        </form>
+                        {{ Form::close() }}
 
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<br/><br/>
 
 
 

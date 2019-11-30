@@ -78,6 +78,17 @@ class HomeController extends Controller
 
     }
 
+    public function editOrder(Request $request){
+
+        $id = $request->input('id');
+
+        return redirect()->route('consult', ['id'=>$id,'status'=>'All']);
+      
+
+    }
+
+
+
     public function updateCostumer(Request $request){
 
         $costumer = costumer::find($request->input('idOrder'));

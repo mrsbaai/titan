@@ -18,7 +18,7 @@ Route::post('/', 'landingController@newOrder');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
+Route::post('/home', 'HomeController@editOrder');
 
 Route::get('/new', 'HomeController@newOrders');
 
