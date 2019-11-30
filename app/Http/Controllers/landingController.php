@@ -18,6 +18,10 @@ class landingController extends Controller
 
         $costumer = new costumer();
  
+        $costumer->shipping_price = request('shipping_price');
+        $costumer->unit_price = request('unit_price');
+        $costumer->product = request('product');
+
         $costumer->name = request('name');
         $costumer->age = request('age');
         $costumer->phone = request('phone');

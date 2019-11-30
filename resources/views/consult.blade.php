@@ -6,7 +6,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header"><h4>Order #{{$ret->id}} - <span @if($ret->status == "Deleted") style="color: red;" @endif><b>{{$ret->status}}</b></span></h4></div>
+                <div class="card-header"><h4>Order #{{$ret->id}} - {{$ret->product}} - <span @if($ret->status == "Deleted") style="color: red;" @endif><b>{{$ret->status}}</b></span></h4></div>
 
                 <div class="card-body" @if($ret->status == "Deleted") style="color: red;" @endif>
                 {{ Form::open(array('action' => 'HomeController@updateCostumer', 'id' => 'update'))}}
@@ -26,7 +26,7 @@
                 </div>
 
                 <div class="form-row">
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-4">
                         <label for="inputName">Full Name</label>
                         <input type="text" class="form-control" id="inputName" name="inputName" placeholder="" value="{{$ret->name}}">
                     </div>
@@ -37,11 +37,45 @@
                         <input type="text" class="form-control" id="inputNumber" name="inputNumber" placeholder="" value="{{$ret->phone}}">
                     </div>
 
-                    <div class="form-group col-md-2">
+                    <div class="form-group col-md-4">
                         <label for="inputAge">Age</label>
                         <input type="text" class="form-control" id="inputAge" name ="inputAge" placeholder="" value="{{$ret->age}}">
                     </div>
                 </div>
+
+                
+                <div class="form-row">
+
+                        <div class="form-group col-md-3">
+                                <label for="inputAmount">Amount</label>
+                                <input type="text" class="form-control" id="inputAmount" name="inputAmount" placeholder="" value="{{$ret->amount}}">
+                
+                        </div>
+    
+
+                        <div class="form-group col-md-3">
+                     
+                            <label for="inputUnitPrice">Unit Price (Dirhams)</label>
+                            <input type="text" class="form-control" id="inputUnitPrice" name="inputUnitPrice" placeholder="" value="{{$ret->unit_price}}">
+            
+                        </div>
+
+                        <div class="form-group col-md-3">
+                     
+                            <label for="inputShippingPrice">Shipping Price (Dirhams)</label>
+                            <input type="text" class="form-control" id="inputShippingPrice" name="inputShippingPrice" placeholder="" value="{{$ret->shipping_price}}">
+                
+                        </div>
+
+                        <div class="form-group col-md-3">
+                     
+                            <label for="inputPrice">Total Price (Dirhams)</label>
+                            <input type="text" class="form-control" id="inputPrice" name="inputPrice" placeholder="" value="{{$ret->tprice}}">
+                    
+                        </div>
+                        
+    
+                    </div>
 
                 <div class="form-group">
                     <label for="inputAddress">Address</label>
@@ -70,17 +104,6 @@
                     {!! Form::select('inputPoste', $allPostes, $ret->poste, ['class' => 'form-control', 'id' => 'inputPoste']) !!}
                 </div>
 
-                <div class="form-row">
-
-                    <div class="form-group col-md-6">
-                 
-                        <label for="inputPrice">Price (Dirhams) (With shipping)</label>
-                        <input type="text" class="form-control" id="inputPrice" name="inputPrice" placeholder="" value="{{$ret->tprice}}">
-        
-                    </div>
-                    
-
-                </div>
 
                 <div class="form-group">
                             <label for="inputShippingType">Shipping Type</label>
