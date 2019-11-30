@@ -7,7 +7,7 @@
         <div class="col-md-8">
             <div class="card">
                     {{ Form::open(array('action' => 'HomeController@updateCostumer', 'id' => 'update'))}}
-                <div class="card-header"><div class="form-row" @if($ret->status == "Deleted") style="color: red;" @endif><div class="form-group col-md-6">Order #{{$ret->id}} - </div><div class="form-group col-md-6 text-right">{!! Form::select('inputStatus', $allStatus, $ret->status, ['class' => 'form-control']) !!}</div></div>
+                <div class="card-header"><div class="form-row" @if($ret->status == "Deleted") style="color: red;" @endif><div class="form-group col-md-6"><h3>Order #{{$ret->id}} - </h3></div><div class="form-group col-md-6 text-right">{!! Form::select('inputStatus', $allStatus, $ret->status, ['class' => 'form-control']) !!}</div></div>
 
                 <div class="card-body" @if($ret->status == "Deleted") style="color: red;" @endif>
                 
