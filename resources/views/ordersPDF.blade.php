@@ -10,7 +10,8 @@
 
 @foreach($ret as $key => $data)
 <div class="content">
-<br/><h1>Order#: {{$data->id}} - {{$data->product}} - {{$data->status}}</h1>
+<br/>
+<center><h1>Order#: {{$data->id}} - {{$data->product}} - {{$data->status}}</h1></center>
 <br/>
 <br/>Created: {{$data->created_at}}
 <br/>
