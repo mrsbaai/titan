@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use DB;
 use App\costumer;
+use PDF;
 class HomeController extends Controller
 {
     /**
