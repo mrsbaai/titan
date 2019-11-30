@@ -116,6 +116,12 @@
                     <input type="text" class="form-control" id="inputTracking" name="inputTracking" value="{{$ret->tracking}}" placeholder="">
                 </div>
 
+                <div class="form-group">
+                        <label for="inputNotes">Notes</label>
+                        <textarea class="form-control" id="inputNotes" naùe="inputNotes" rows="6">{{$ret->notes}}</textarea>
+                </div>
+                      
+
                 <div class="form-row">
                     <div class="form-group col-md-6 ">
                     @if($PreviousID)<button class="btn btn-lg btn-gray"><a style="color: black;" href="{{route('consult', ['id' => $PreviousID, 'status' => $ret->status])}}">< Previous</a></button>@endif

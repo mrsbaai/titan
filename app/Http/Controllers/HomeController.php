@@ -81,6 +81,10 @@ class HomeController extends Controller
         $costumer->tracking = $request->input('inputTracking');
         $costumer->poste = $request->input('inputPoste');
         $costumer->phone = $request->input('inputNumber');
+        $costumer->notes = $request->input('inputNotes');
+        $costumer->amount = $request->input('inputAmount'); 
+        $costumer->unit_price = $request->input('inputUnitPrice'); 
+        $costumer->shipping_price = $request->input('inputShippingPrice');
         $costumer->save();
 
 
