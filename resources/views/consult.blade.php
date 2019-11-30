@@ -6,7 +6,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header"><h4>Order #{{$ret->id}} - <span @if($ret->status == "Deleted") style="color: red;" @endif><b>{{$ret->status}}</b></span></h4></div>
+                <div class="card-header"><h4>Order #{{$ret->id}} - <span @if($ret->status == "Deleted") style="color: red;" @endif><b>{!! Form::select('inputStatus', $allStatus, $ret->status, ['class' => 'form-control']) !!}</b></span></h4></div>
 
                 <div class="card-body" @if($ret->status == "Deleted") style="color: red;" @endif>
                 {{ Form::open(array('action' => 'HomeController@updateCostumer', 'id' => 'update'))}}
@@ -15,6 +15,16 @@
                 <div class="form-group col-md-6" style="font-size:150%;">Created: <span id="created" style="float:right;">{{$ret->created_at}}</span><h4><div  style="float:right;" id="created2"></div></h4></div>
                 <div class="form-group col-md-6" style="font-size:150%;">Updated: <span id="updated" style="float:right;">{{$ret->updated_at}}</span><h4><div  style="float:right;" id="updated2"></div></h4></div>
                 </div>
+                
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                            <div class="form-group">
+                                <label for="inputStatus">Status</label>
+                                s
+                            </div>
+                    </div>
+                </div>
+
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="inputName">Full Name</label>
@@ -69,14 +79,7 @@
         
                     </div>
                     
-                    <div class="form-group col-md-6">
-                    
-                        <div class="form-group">
-                            <label for="inputStatus">Status</label>
-                            {!! Form::select('inputStatus', $allStatus, $ret->status, ['class' => 'form-control']) !!}
-                        </div>
 
-                    </div>
                 </div>
 
                 <div class="form-group">
