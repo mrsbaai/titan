@@ -65,7 +65,7 @@ return [
     |
     */
 
-    'timezone' => 'Africa/Morocco',
+    'timezone' => 'Africa/Casablanca',
 
     /*
     |--------------------------------------------------------------------------
