@@ -13,8 +13,8 @@
                 {{ Form::open(array('action' => 'HomeController@updateCostumer', 'id' => 'update'))}}
                 <input type="hidden" name="idOrder" id="idOrder" value="{{$ret->id}}" >
                 <div class="form-row">
-                <div class="form-group col-md-12" style="font-size:120%;">Created: <span id="created" style="float:right;">{{$ret->created_at}}</span><div  style="float:right;" id="created2"></div><div>
-                <div class="form-group col-md-12" style="font-size:120%;">Updated: <span id="updated" style="float:right;">{{$ret->updated_at}}</span><div  style="float:right;" id="updated2"></div></div>
+                <div class="form-group col-md-12" style="font-size:120%;">Created: <span id="created">{{$ret->created_at}}</span><div  style="float:right;" id="created2"></div></div>
+                <div class="form-group col-md-12" style="font-size:120%;">Updated: <span id="updated">{{$ret->updated_at}}</span><div  style="float:right;" id="updated2"></div></div>
                 </div>
                 
 
