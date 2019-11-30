@@ -2,9 +2,40 @@
 
 
 @section('content')
+
+
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-10">
+            <div class="card">
+                <div class="card-header"><h4>Edit an order</h4></div>
+
+                <div class="card-body">
+                        <form>
+                                <div class="form-row align-items-center">
+                                        <div class="col-auto">
+                                          <label class="sr-only" for="inlineFormInput">Order #: </label>
+                                          <input type="text" class="form-control mb-2" id="id" name="id" placeholder="Order #">
+                                        </div>
+                                      
+                                        <div class="col-auto">
+                                          <button type="submit" class="btn btn-primary mb-2">Edit</button>
+                                        </div>
+                                </div>
+                                
+                        </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
             <div class="card">
                 <div class="card-header"><h4>{{$title}} - ({{count($ret)}} in total)</h4></div>
 

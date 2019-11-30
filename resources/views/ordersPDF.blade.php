@@ -43,7 +43,8 @@
 <br/>
 <br/>Tracking Code: {{$data->tracking}}
 <br/>
-<br/>Notes: {!! nl2br($data->notes) !!}
+<br/>Notes: 
+<br/>{!! nl2br($data->notes) !!}
 </div>
 <div class="page-break"></div>
 @endforeach
