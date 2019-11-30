@@ -1,5 +1,15 @@
 <!DOCTYPE html>
 <html><head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153576435-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-153576435-1');
+</script>
+
 <meta http-equiv="content-type" content="text/html; charset=UTF-8"><!-- [pre]land_id =  -->
 
 

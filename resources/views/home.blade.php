@@ -52,7 +52,7 @@
                     <table class="table" name="orders" id="orders">
                         <thead class="thead-dark">
                         <tr>
-                            <th>ID</th>
+                            <th>#</th>
                             <th>Costumer Name</th>
                             <th>Phone</th>
                             <th>Status</th>
