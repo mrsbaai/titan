@@ -13,9 +13,9 @@
 <br/>
 <center><h2>Order#: {{$data->id}} - {{$data->product}} - {{$data->status}}</h2></center>
 <br/>
-<br/>Created: {{$data->created_at}}
+<br/>Created By Costumer: {{$data->created_at}}
 <br/>
-<br/>Updated:  {{$data->updated_at}}
+<br/>Updated By Support:  {{$data->updated_at}}
 <br/>
 <br/><b>Amount: {{$data->amount}}</b>
 <br/>
