@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use DB;
 use App\costumer;
 use PDF;
+use Carbon\Carbon;
 class HomeController extends Controller
 {
     /**
@@ -72,7 +73,8 @@ class HomeController extends Controller
         $ret = DB::table('costumers')->where('status', 'Processed')->orderBy('created_at', 'desc')->get();
         $data = ['ret' => $ret];
         $pdf = PDF::loadView('ordersPDF', $data);
-        return $pdf->download('Orders.pdf');
+        $fileName = "orders_" . Carbon::now()->format('Y-m-d-H-s');
+        return $pdf->download('orders.pdf');
 
     }
 

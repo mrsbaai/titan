@@ -3,7 +3,7 @@
             page-break-after: always;
         }
         .content {
-            font-size: 120%;
+            font-size: 110%;
             font-family: Arial, Helvetica, sans-serif;
         }
 </style>
@@ -43,7 +43,7 @@
 <br/>
 <br/>Tracking Code: {{$data->tracking}}
 <br/>
-<br/>Notes: {{$data->notes}}
+<br/>Notes: {{nl2br(e($data->notes))}}
 </div>
 <div class="page-break"></div>
 @endforeach
