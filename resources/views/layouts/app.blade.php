@@ -70,10 +70,13 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
+                    @guest
+                    @else
                     <ul class="navbar-nav mr-auto">
-                            <li><a href="{{ route('orders-pdf') }}">Download Orders Needing Shipping</a></li>
+                            <li><a class="btn btn-primary" href="{{ route('orders-pdf') }}">Download Orders Needing Shipping</a></li>
 
                     </ul>
+                    @endguest
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
