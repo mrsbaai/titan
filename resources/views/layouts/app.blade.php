@@ -73,7 +73,7 @@
                     @guest
                     @else
                     <ul class="navbar-nav mr-auto">
-                            <li><a class="btn btn-primary" href="{{ route('orders-pdf') }}">Download Orders Needing Shipping</a></li>
+                            <li><a class="btn btn-sm btn-dark" href="{{ route('orders-pdf') }}">Download Orders Needing Shipping</a></li>
 
                     </ul>
                     @endguest
