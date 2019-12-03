@@ -72,7 +72,12 @@
                     <!-- Left Side Of Navbar -->
 
                     <ul class="navbar-nav mr-auto">
-                           </ul>
+                            @guest
+                            @else
+                            <li><a class="btn btn-sm btn-dark" href="{{ route('orders-pdf') }}">Download Orders Needing Shipping</a></li>
+
+                            @endguest
+                        </ul>
           
 
                     <!-- Right Side Of Navbar -->
@@ -88,8 +93,7 @@
                         @else
                             <li class="nav-item dropdown">
 
-                                <li><a class="btn btn-sm btn-dark" href="{{ route('orders-pdf') }}">Download Orders Needing Shipping</a></li>
-
+                               
                     
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
